@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Dashboard</title>
+
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified CSS -->
+  <!-- Use this on Producetion Server -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+  <!-- Use this on Development Server
+  <link href="assests/css/bootstrap.min.css" rel="stylesheet">-->
+
+  <!-- Custom Style CSS File-->
+  <link href="assests/css/style.css" rel="stylesheet">
+
+</head>
+
+  <div class="wrapper">
+    <!--Sidebar section starts here -->
+    <div class="sidebar" id="sidebar">
+      <p class="sidebar-nav"> <a href="index.html"><i class="fas fa-bolt"></i> MyAt</a> </p>
+      <div class="sidebar-header">
+        <div class="sh-img">
+          <img src="assests/img/user/user.png" alt="profile image" width="100%">
+        </div>
+        <div class="sh-heading">
+          <p>Ankit Verma</p>
+          <p>
+            <a href="#"><i class="fas fa-user"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+            <a href="#"><i class="fas fa-cog"></i></a>
+            <a href="#"><i class="fas fa-file-export"></i></a>
+          </p>
+        </div>
+      </div>
+      <div class="sidebar-list">
+        <p> <a href="#"><i class="fas fa-home"></i> Home</a> </p>
+        <p> <a href="#"><i class="fas fa-arrow-up"></i> Upgrade Now</a> <span class="badge badge-success">Upgrade!</span></p>
+        <p> <a href="#"><i class="fas fa-star"></i> Release Notes</a> <span class="badge badge-success">New!</span></p>
+
+        <p class="sl-heading">ATTENDANCE <i class="fas fa-check float-right"></i></p>
+        <p class="sl-sb-heading slsh-active"> <a href="#"><i class="fas fa-edit"></i> Take Attendance</a> </p>
+
+        <p class="sl-heading">Management <i class="fab fa-elementor float-right"></i></p>
+        <p class="collapse-list">
+          <a class="" data-toggle="collapse" href="#students" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <i class="fas fa-users"></i> Students <i class="fas fa-angle-left float-right"></i>
+          </a>
+        </p>
+        <div class="collapse sb-collapse" id="students">
+          <div class="card card-body">
+            <p>Students List</p>
+            <p>Add Student</p>
+          </div>
+        </div>
+        <p class="collapse-list">
+          <a class="" data-toggle="collapse" href="#classes" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <i class="fas fa-book"></i> Classes <i class="fas fa-angle-left float-right"></i>
+          </a>
+        </p>
+        <div class="collapse sb-collapse" id="classes">
+          <div class="card card-body">
+            <p>Class List</p>
+            <p>Add Class</p>
+          </div>
+        </div>
+        <p class="collapse-list">
+          <a class="" data-toggle="collapse" href="#grade" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <i class="fas fa-calendar-check"></i> Grades <i class="fas fa-angle-left float-right"></i>
+          </a>
+        </p>
+        <div class="collapse sb-collapse" id="grade">
+          <div class="card card-body">
+            <p>Grade Level</p>
+            <p>Grade Scales</p>
+          </div>
+        </div>
+        <p class="collapse-list">
+          <a class="" data-toggle="collapse" href="#parent" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <i class="fas fa-user"></i> Parents <i class="fas fa-angle-left float-right"></i>
+          </a>
+        </p>
+        <div class="collapse sb-collapse" id="parent">
+          <div class="card card-body">
+            <p>Parents List</p>
+          </div>
+        </div>
+        <p class="collapse-list">
+          <a class="" data-toggle="collapse" href="#user" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <i class="fas fa-user"></i> Users <i class="fas fa-angle-left float-right"></i>
+          </a>
+        </p>
+        <div class="collapse sb-collapse" id="user">
+          <div class="card card-body">
+            <p>User List</p>
+            <p>Permissions</p>
+          </div>
+        </div>
+        <p class="collapse-list">
+          <a class="" data-toggle="collapse" href="#invoice" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <i class="fas fa-dollar-sign"></i> Invoices <i class="fas fa-angle-left float-right"></i>
+          </a>
+        </p>
+        <div class="collapse sb-collapse" id="invoice">
+          <div class="card card-body">
+            <p>Invoices List</p>
+            <p>Add Invoice</p>
+          </div>
+        </div>
+
+        <p class="sl-heading">MESSAGING <i class="fas fa-envelope float-right"></i></p>
+        <p class="sl-sb-heading"> <a href="#"><i class="fas fa-envelope"></i> Main</a> </p>
+
+        <p class="sl-heading">Reporting <i class="fas fa-chart-bar float-right"></i></p>
+        <p class="collapse-list">
+          <a class="" data-toggle="collapse" href="#report" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <i class="fas fa-chart-bar"></i> Main Reports <i class="fas fa-angle-left float-right"></i>
+          </a>
+        </p>
+        <div class="collapse sb-collapse" id="report">
+          <div class="card card-body">
+            <p> <a href="#"> General</a></p>
+            <p>Report Wizard</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!--Sidebar section ends here -->
+
+    <!--Main Content section starts here -->
+    <div class="main-content-wrapper">
+      <div class="mc-search-sec">
+        <div class="mc-menu-bar">
+          <button id="toggle_menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <div class="mc-search">
+          <form action="">
+            <input type="text" placeholder="Search..." name="search" required>
+          </form>
+        </div>
+        <div class="mc-profile dropdown">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="assests/img/user/user.png" alt="profile image" width="100%">
+          </a>
+
+          <div class="dropdown-menu" style="min-width: 12rem" aria-labelledby="dropdownMenuLink">
+            <p class="text-center">Account</p>
+            <hr style="margin: 5px 0px;">
+            <a class="dropdown-item" href="screen2.html">Message <i class="fas fa-envelope float-right"></i></a>
+            <hr style="margin: 5px 0px;">
+            <a class="dropdown-item" href="#">Profile <i class="fas fa-user float-right"></i></a>
+            <a class="dropdown-item" href="#">Settings <i class="fas fa-cog float-right"></i></a>
+            <hr style="margin: 5px 0px;">
+            <a class="dropdown-item" href="#">Lock Account <i class="fas fa-lock float-right"></i></a>
+            <a class="dropdown-item" href="#">Logout <i class="fas fa-sign-out-alt float-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mcd-heading">
+        <p>General Reports</p>
+      </div>
+
+      <div class="main-content">
+        <div class="calendar-sec">
+          <div id="embeddedExample" style="">
+            <div id="embeddedCalendar" style="margin-bottom: -15px;"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="attendance">
+            <div class="form-group row">
+              <label for="staticEmail" class="col-sm-4 col-form-label">Attendance For</label>
+              <div class="col-sm-8">
+                <select class="form-control form-control-sm" style="display: inline-block; width: auto">
+                  <option selected>Choose a Class..</option>
+                  <option>Class X-1</option>
+                  <option>Class X-2</option>
+                  <option>Class X-3</option>
+                </select>
+                <button><i class="fas fa-filter"></i></button>
+                <button><i class="fas fa-file-alt"></i> Note</button>
+              </div>
+            </div>
+            <div class="col-sm-4" style="padding-left: 0px">
+              <select class="form-control form-control-sm">
+                <option selected>Mark All As..</option>
+                <option id="present">Present</option>
+                <option id="absent">Absent</option>
+                <option id="tardy">Tardy</option>
+              </select>
+            </div>
+          </div>
+          <div class="attendance-table table-responsive-sm">
+            <table class="table table-borderless">
+              <tbody>
+                <tr>
+                  <td colspan="2" class="btn-td"><button><i class="fas fa-file-alt"></i></button> <a href="#"> Ankit Verma</a></td>
+                  <td><button type="button" class="btn btn-default btn-sm">Present</button></td>
+                  <td><button type="button" class="btn btn-default btn-sm">Absent</button></td>
+                  <td><button type="button" class="btn btn-default btn-sm">Tardy</button></td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="btn-td"><button><i class="fas fa-file-alt"></i></button> <a href="#"> Ranvijay</a> </td>
+                  <td><button type="button" class="btn btn-default btn-sm">Present</button></td>
+                  <td><button type="button" class="btn btn-default btn-sm">Absent</button></td>
+                  <td><button type="button" class="btn btn-default btn-sm">Tardy</button></td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="btn-td"><button><i class="fas fa-file-alt"></i></button> <a href="#"> Vishal Anand</a> </td>
+                  <td><button type="button" class="btn btn-default btn-sm">Present</button></td>
+                  <td><button type="button" class="btn btn-default btn-sm">Absent</button></td>
+                  <td><button type="button" class="btn btn-default btn-sm">Tardy</button></td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="btn-td"><button><i class="fas fa-file-alt"></i></button> <a href="#"> Shubham Mishra</a> </td>
+                  <td><button type="button" class="btn btn-default btn-sm">Present</button></td>
+                  <td><button type="button" class="btn btn-default btn-sm">Absent</button></td>
+                  <td><button type="button" class="btn btn-default btn-sm">Tardy</button></td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="btn-td"><button><i class="fas fa-file-alt"></i></button> <a href="#"> Shritansh</a> </td>
+                  <td><button type="button" class="btn btn-default btn-sm">Present</button></td>
+                  <td><button type="button" class="btn btn-default btn-sm">Absent</button></td>
+                  <td><button type="button" class="btn btn-default btn-sm">Tardy</button></td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="btn-td"><button><i class="fas fa-file-alt"></i></button> <a href="#">Ashish Jain</a> </td>
+                  <td><button type="button" class="btn btn-default btn-sm">Present</button></td>
+                  <td><button type="button" class="btn btn-default btn-sm">Absent</button></td>
+                  <td><button type="button" class="btn btn-default btn-sm">Tardy</button></td>
+                </tr>
+              </tbody>
+            </table>
+            <hr/>
+            <div class="save-att">
+              <div class="alert alert-warning" role="alert">
+                Attendance for this day has not been saved!
+              </div>
+              <button type="button" class="btn btn-success">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Main Content section ends here -->
+  </div>
+
+
+</body>
+  <!-- jQuery, Popper, Bootstrap, library -->
+
+  <!-- Use this on Producetion Server -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+  <!-- Use this on Development Server
+  <script type="text/javascript" src="assests/js/jquery.min.js"></script>
+  <script type="text/javascript" src="assests/main/js/popper.min.js"></script>
+  <script type="text/javascript" src="assests/main/js/bootstrap.min.js"></script>-->
+
+  <!-- Custom Java Script -->
+  <script type="text/javascript" src="assests/js/script.js"></script>
+</html>

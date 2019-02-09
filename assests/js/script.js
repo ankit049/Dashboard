@@ -1,0 +1,154 @@
+// show/hide sidebar
+document.getElementById("toggle_menu").onclick = function(){
+  document.getElementById("sidebar").classList.toggle("hide-sidebar");
+};
+
+// student name array
+const studentName = [
+  {name: 'Ankit Verma', class: 'ClassXA'},
+  {name: 'Ranvijay', class: 'ClassXA'},
+  {name: 'Vishal Anand', class: 'ClassXB'},
+  {name: 'Shubham Mishra', class: 'ClassXA'},
+  {name: 'Shritansh', class: 'ClassXA'},
+  {name: 'Ashish Jain', class: 'ClassXB'},
+  {name: 'Amit Sharma', class: 'ClassXA'},
+  {name: 'Virat Jain', class: 'ClassXA'},
+  {name: 'Pankaj Tirpathi', class: 'ClassXB'},
+  {name: 'Nimal Chaturvedi', class: 'ClassXA'},
+  {name: 'Akash', class: 'ClassXB'},
+  {name: 'Sachin Dube', class: 'ClassXA'},
+  {name: 'Anish Shrivastav', class: 'ClassXB'}
+];
+
+const generateAttendanceList = (name) => (
+  `<tr>
+    <td colspan="2" class="btn-td"><button><i class="fas fa-file-alt"></i></button> <a href="#"> ${name}</a> </td>
+    <td><button type="button" class="td-btn btn btn-default btn-sm present" onclick="changBtnColor(event, 'present')">Present</button></td>
+    <td><button type="button" class="td-btn btn btn-default btn-sm absent" onclick="changBtnColor(event, 'absent')">Absent</button></td>
+    <td><button type="button" class="td-btn btn btn-default btn-sm tardy" onclick="changBtnColor(event, 'tardy')">Tardy</button></td>
+  </tr>`
+)
+
+const attendanceList = studentName.map(name => {
+  let list = generateAttendanceList(name.name);
+  return list;
+});
+
+//insert attendanceList on DOM
+(function() {
+   var getElement = document.getElementById("attendanceList");
+   if(getElement) {
+    getElement.innerHTML = attendanceList.join('');
+   }
+})();
+
+function clearAllBtnClass() {
+  var getAllElements = document.querySelectorAll(".td-btn");
+
+  getAllElements.forEach(function(element) {
+    element.classList.remove("btn-primary");
+    element.classList.remove("btn-success");
+    element.classList.remove("btn-danger");
+    element.style.color = "dimgray";
+  });
+}
+
+function changBtnColor(e, val) {
+  console.log(e.target);
+  console.log(val);
+
+  clearAllBtnClass();
+
+  if(val === "present") {
+    e.target.classList.add("btn-primary");
+    e.target.style.color = "white";
+  }
+  if(val === "absent") {
+    e.target.classList.add("btn-success");
+    e.target.style.color = "white";
+  }
+  if(val === "tardy") {
+    e.target.classList.add("btn-danger");
+    e.target.style.color = "white";
+  }
+}
+
+// change btn color by selecting the attendance type
+function val() {
+    d = document.getElementById("attType").value;
+    var getElements = document.querySelectorAll("." + d);
+
+    clearAllBtnClass();
+
+    if(d === "all") {
+      getElements.forEach(function(element) {
+        element.style.color = "dimgray";
+      });
+    }
+    if(d === "present") {
+      getElements.forEach(function(element) {
+        element.classList.remove("btn-primary");
+        element.classList.remove("btn-success");
+        element.classList.remove("btn-danger");
+        element.classList.add("btn-primary");
+        element.style.color = "white";
+      });
+    }
+    if(d === "absent") {
+      getElements.forEach(function(element) {
+        element.classList.remove("btn-primary");
+        element.classList.remove("btn-success");
+        element.classList.remove("btn-danger");
+        element.classList.add("btn-success");
+        element.style.color = "white";
+      });
+    }
+    if(d === "tardy") {
+      getElements.forEach(function(element) {
+        element.classList.remove("btn-primary");
+        element.classList.remove("btn-success");
+        element.classList.remove("btn-danger");
+        element.classList.add("btn-danger");
+        element.style.color = "white";
+      });
+    }
+    if(d === "tardy") {
+      getElements.forEach(function(element) {
+        element.classList.remove("btn-primary");
+        element.classList.remove("btn-success");
+        element.classList.remove("btn-danger");
+        element.classList.add("btn-danger");
+        element.style.color = "white";
+      });
+    }
+}
+
+//on change class
+function onClassChange() {
+    d = document.getElementById("classType").value;
+    console.log(d);
+    if(d){
+      const attendanceList = studentName.map(name => {
+        if(d === name.class) {
+          return generateAttendanceList(name.name);
+        }
+      });
+
+      let completeList = [];
+      attendanceList.forEach(element => {
+        if(element) {
+          completeList.push(element);
+        }
+      })
+
+      var getElement = document.getElementById("attendanceList");
+      if(getElement) {
+        if(completeList.length > 0) {
+          getElement.innerHTML = completeList.join('');
+        } else {
+          console.log("no element");
+          getElement.innerHTML = "<p style='text-align: center;color: brown'>No Class Selected</p>";
+        }
+      }
+    }
+}
