@@ -160,7 +160,10 @@ img {
   color: white;
   font-size: 13px ! important;
   margin-bottom: 5px;
-
+}
+.sb-collapse > div > p:hover{
+  text-decoration: underline;
+  cursor: pointer;
 }
 /* Sidebar css ends here */
 
@@ -331,6 +334,51 @@ img {
   padding: 4px;
   text-align: center;
 }
+
+
+/* Report CSS start here */
+.report-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: whitesmoke;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  padding: 20px 15px;
+  width: 100%;
+}
+.report-content > div {
+  padding: 20px 15px;
+  border-radius: 4px;
+}
+.report-content > div:hover {
+  filter: brightness(0.9);
+}
+.report-content > div > button {
+  font-size: 13px;
+  color: black;
+}
+.report-content > div > button > i{
+  margin-right: 5px;
+}
+.report-content > div:nth-of-type(1) {
+  background-color: #51d88a;
+}
+.report-content > div:nth-of-type(2) {
+  background-color: #eb9950;
+}
+.report-content > div:nth-of-type(3) {
+  background-color: #46c9e9;
+}
+.report-heading {
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.report-heading > i {
+  margin-right: 5px;
+}
+
 #embeddedCalendar > .calendar > table > thead > tr:first-of-type > td {
   padding: 10px 0px;
 }
@@ -344,7 +392,9 @@ img {
     grid-row-gap: 15px;
   }
 
-
+  .report-content {
+    grid-template-columns: 1fr;
+  }
 }
 
 
@@ -363,6 +413,9 @@ img {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .report-content {
+    grid-template-columns: 1fr 1fr;
+  }
 
 }
 

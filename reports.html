@@ -160,7 +160,7 @@
           <div class="dropdown-menu" style="min-width: 12rem" aria-labelledby="dropdownMenuLink">
             <p class="text-center">Account</p>
             <hr style="margin: 5px 0px;">
-            <a class="dropdown-item" href="screen2.html">Message <i class="fas fa-envelope float-right"></i></a>
+            <a class="dropdown-item" href="#">Message <i class="fas fa-envelope float-right"></i></a>
             <hr style="margin: 5px 0px;">
             <a class="dropdown-item" href="#">Profile <i class="fas fa-user float-right"></i></a>
             <a class="dropdown-item" href="#">Settings <i class="fas fa-cog float-right"></i></a>
@@ -175,91 +175,141 @@
         <p>General Reports</p>
       </div>
 
-      <div class="main-content">
-        <div class="calendar-sec">
-          <div id="embeddedExample" style="">
-            <div id="embeddedCalendar" style="margin-bottom: -15px;"></div>
+      <div class="report-content">
+        <div>
+          <p class="report-heading"><i class="far fa-file-alt"></i>Daily Attendance Sheet</p>
+          <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-cog"></i> Configure and Run</button>
+        </div>
+        <div>
+          <p class="report-heading"><i class="far fa-file-alt"></i>Daily Attendance Sheet</p>
+          <div class="form-group row" style="margin-bottom: 5px;">
+            <div class="col-sm-12" style="display: flex">
+              <select class="form-control form-control-sm" id="classType" style="display: inline-block; width: auto;margin-right: 10px" onchange="onClassChange()">
+                <option value="0" selected>Choose a Class..</option>
+                <option value="ClassXA">Class X-A</option>
+                <option value="ClassXB">Class X-B</option>
+              </select>
+              <button class="btn btn-sm" data-toggle="modal" data-target="#exampleModal">GO</button>
+            </div>
           </div>
         </div>
-
         <div>
-          <div class="attendance">
-            <div class="form-group row">
-              <label for="staticEmail" class="col-sm-4 col-form-label">Attendance For</label>
-              <div class="col-sm-8">
-                <select class="form-control form-control-sm" style="display: inline-block; width: auto">
-                  <option selected>Choose a Class..</option>
-                  <option>Class X-1</option>
-                  <option>Class X-2</option>
-                  <option>Class X-3</option>
-                </select>
-                <button><i class="fas fa-filter"></i></button>
-                <button><i class="fas fa-file-alt"></i> Note</button>
-              </div>
-            </div>
-            <div class="col-sm-4" style="padding-left: 0px">
-              <select class="form-control form-control-sm">
-                <option selected>Mark All As..</option>
-                <option id="present">Present</option>
-                <option id="absent">Absent</option>
-                <option id="tardy">Tardy</option>
-              </select>
-            </div>
-          </div>
-          <div class="attendance-table table-responsive-sm">
-            <table class="table table-borderless">
-              <tbody>
-                <tr>
-                  <td colspan="2" class="btn-td"><button><i class="fas fa-file-alt"></i></button> <a href="#"> Ankit Verma</a></td>
-                  <td><button type="button" class="btn btn-default btn-sm">Present</button></td>
-                  <td><button type="button" class="btn btn-default btn-sm">Absent</button></td>
-                  <td><button type="button" class="btn btn-default btn-sm">Tardy</button></td>
-                </tr>
-                <tr>
-                  <td colspan="2" class="btn-td"><button><i class="fas fa-file-alt"></i></button> <a href="#"> Ranvijay</a> </td>
-                  <td><button type="button" class="btn btn-default btn-sm">Present</button></td>
-                  <td><button type="button" class="btn btn-default btn-sm">Absent</button></td>
-                  <td><button type="button" class="btn btn-default btn-sm">Tardy</button></td>
-                </tr>
-                <tr>
-                  <td colspan="2" class="btn-td"><button><i class="fas fa-file-alt"></i></button> <a href="#"> Vishal Anand</a> </td>
-                  <td><button type="button" class="btn btn-default btn-sm">Present</button></td>
-                  <td><button type="button" class="btn btn-default btn-sm">Absent</button></td>
-                  <td><button type="button" class="btn btn-default btn-sm">Tardy</button></td>
-                </tr>
-                <tr>
-                  <td colspan="2" class="btn-td"><button><i class="fas fa-file-alt"></i></button> <a href="#"> Shubham Mishra</a> </td>
-                  <td><button type="button" class="btn btn-default btn-sm">Present</button></td>
-                  <td><button type="button" class="btn btn-default btn-sm">Absent</button></td>
-                  <td><button type="button" class="btn btn-default btn-sm">Tardy</button></td>
-                </tr>
-                <tr>
-                  <td colspan="2" class="btn-td"><button><i class="fas fa-file-alt"></i></button> <a href="#"> Shritansh</a> </td>
-                  <td><button type="button" class="btn btn-default btn-sm">Present</button></td>
-                  <td><button type="button" class="btn btn-default btn-sm">Absent</button></td>
-                  <td><button type="button" class="btn btn-default btn-sm">Tardy</button></td>
-                </tr>
-                <tr>
-                  <td colspan="2" class="btn-td"><button><i class="fas fa-file-alt"></i></button> <a href="#">Ashish Jain</a> </td>
-                  <td><button type="button" class="btn btn-default btn-sm">Present</button></td>
-                  <td><button type="button" class="btn btn-default btn-sm">Absent</button></td>
-                  <td><button type="button" class="btn btn-default btn-sm">Tardy</button></td>
-                </tr>
-              </tbody>
-            </table>
-            <hr/>
-            <div class="save-att">
-              <div class="alert alert-warning" role="alert">
-                Attendance for this day has not been saved!
-              </div>
-              <button type="button" class="btn btn-success">Save</button>
-            </div>
-          </div>
+          <p class="report-heading"><i class="far fa-file-alt"></i>Weekly Class Attendance</p>
+          <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#classModal" ><i class="fas fa-cog"></i> Configure and Run</button>
+        </div>
+      </div>
+      <div class="report-content">
+        <div style="background-color: transparent">
+          <!-- <p class="report-heading"><i class="far fa-file-alt"></i>Daily Attendance Sheet</p>
+          <button class="btn btn-default btn-sm"><i class="fas fa-cog"></i> Configure and Run</button> -->
+        </div>
+        <div>
+          <p class="report-heading"><i class="far fa-file-alt"></i>Students Attendance</p>
+          <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-cog"></i> Configure and Run</button>
+        </div>
+        <div>
+          <p class="report-heading"><i class="far fa-file-alt"></i>Monthly Class Attendance</p>
+          <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#classModal"><i class="fas fa-cog"></i> Configure and Run</button>
+        </div>
+      </div>
+      <div class="report-content">
+        <div>
+          <p class="report-heading"><i class="far fa-file-alt"></i>Parents Custom Fields</p>
+          <button class="btn btn-default btn-sm" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-cog"></i> Configure and Run</button>
+        </div>
+        <div>
+          <p class="report-heading"><i class="far fa-file-alt"></i>Students Custom Fields</p>
+          <button class="btn btn-default btn-sm"  data-toggle="modal" data-target="#exampleModal"><i class="fas fa-cog"></i> Configure and Run</button>
+        </div>
+        <div>
+          <p class="report-heading"><i class="far fa-file-alt"></i>Quarterly Class Attendance</p>
+          <button class="btn btn-default btn-sm"  data-toggle="modal" data-target="#classModal"><i class="fas fa-cog"></i> Configure and Run</button>
         </div>
       </div>
     </div>
     <!--Main Content section ends here -->
   </div>
+
+
+
+<!-- All Modals -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: whitesmoke">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: dimgray;font-family: sans-serif;">Student Attendance</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group row">
+          <label for="staticEmail" class="col-sm-4 col-form-label"> <span class="float-right"> Student </span></label>
+          <div class="col-sm-7">
+            <select class="form-control form-control-sm" id="classType" style="display: inline-block; width: 100%" onchange="onClassChange()">
+              <option value="0" selected>Choose students..</option>
+              <option value="ClassXA">Ankit</option>
+              <option value="ClassXB">Amit Sharma</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="staticEmail" class="col-sm-4 col-form-label"> <span class="float-right"> Select Date </span> </label>
+          <div class="col-sm-7">
+            <select class="form-control form-control-sm" id="classType" style="display: inline-block; width: 100%" onchange="onClassChange()">
+              <option value="0" selected>Choose Date..</option>
+              <option value="ClassXA">Class X-A</option>
+              <option value="ClassXB">Class X-B</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer" style="background-color: whitesmoke">
+        <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+        <a  href="class-reports.html" class="btn btn-primary btn-sm">Run</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="classModal" tabindex="-1" role="dialog" aria-labelledby="classModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: whitesmoke;">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: dimgray;font-family: sans-serif;">Class Attendance</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group row">
+          <label for="staticEmail" class="col-sm-4 col-form-label"> <span class="float-right"> Class </span></label>
+          <div class="col-sm-7">
+            <select class="form-control form-control-sm" id="classType" style="display: inline-block; width: 100%" onchange="onClassChange()">
+              <option value="0" selected>Choose a Class..</option>
+              <option value="ClassXA">Class X-A</option>
+              <option value="ClassXB">Class X-B</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="staticEmail" class="col-sm-4 col-form-label"> <span class="float-right"> Month/Year </span> </label>
+          <div class="col-sm-7">
+            <select class="form-control form-control-sm" id="classType" style="display: inline-block; width: 100%" onchange="onClassChange()">
+              <option value="0" selected>Choose Month/Year..</option>
+              <option value="ClassXA">Class X-A</option>
+              <option value="ClassXB">Class X-B</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer" style="background-color: whitesmoke;">
+        <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+        <a  href="class-reports.html" class="btn btn-primary btn-sm">Run</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 </body>
