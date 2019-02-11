@@ -152,3 +152,44 @@ function onClassChange() {
       }
     }
 }
+
+const dateList = [
+  "February 2019",
+  "January 2019",
+  "December 2018",
+  "November 2018",
+  "October 2018",
+  "September 2018",
+  "August 2018",
+  "July 2018",
+  "June 2018",
+  "May 2018",
+  "April 2018",
+  "March 2018",
+  "February 2018",
+  "January 2018",
+];
+
+
+// add students list to select option
+(function(){
+  var getElement = document.getElementById("studentList");
+  var getDateElement = document.getElementById("dateList");
+
+  let studentList = ["<option value='0' selected>Choose students..</option>"];
+  studentName.forEach(student => {
+    let option = `<option value="ClassXA">${student.name}</option>`;
+    return studentList.push(option);
+  });
+
+  let dateElementList = ["<option value='0' selected>Choose Month/Year..</option>"];
+  dateList.forEach(date => {
+    let option = `<option>${date}</option>`;
+    return dateElementList.push(option);
+  });
+
+  if(getElement || getDateElement) {
+   getElement.innerHTML = studentList.join('');
+   getDateElement.innerHTML = dateElementList.join('');
+  }
+})();

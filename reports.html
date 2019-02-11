@@ -246,27 +246,26 @@
         <div class="form-group row">
           <label for="staticEmail" class="col-sm-4 col-form-label"> <span class="float-right"> Student </span></label>
           <div class="col-sm-7">
-            <select class="form-control form-control-sm" id="classType" style="display: inline-block; width: 100%" onchange="onClassChange()">
-              <option value="0" selected>Choose students..</option>
-              <option value="ClassXA">Ankit</option>
-              <option value="ClassXB">Amit Sharma</option>
+            <select class="form-control form-control-sm" id="studentList" style="display: inline-block; width: 100%">
             </select>
           </div>
         </div>
         <div class="form-group row">
-          <label for="staticEmail" class="col-sm-4 col-form-label"> <span class="float-right"> Select Date </span> </label>
+          <label for="staticEmail" class="col-sm-4 col-form-label"> <span class="float-right"> Select Date From</span> </label>
           <div class="col-sm-7">
-            <select class="form-control form-control-sm" id="classType" style="display: inline-block; width: 100%" onchange="onClassChange()">
-              <option value="0" selected>Choose Date..</option>
-              <option value="ClassXA">Class X-A</option>
-              <option value="ClassXB">Class X-B</option>
-            </select>
+            <input type="date" >
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="staticEmail" class="col-sm-4 col-form-label"> <span class="float-right"> Select Date To</span> </label>
+          <div class="col-sm-7">
+            <input type="date">
           </div>
         </div>
       </div>
       <div class="modal-footer" style="background-color: whitesmoke">
         <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
-        <a  href="class-reports.html" class="btn btn-primary btn-sm">Run</a>
+        <a  href="student-attendance.html" class="btn btn-primary btn-sm">Run</a>
       </div>
     </div>
   </div>
@@ -285,7 +284,7 @@
         <div class="form-group row">
           <label for="staticEmail" class="col-sm-4 col-form-label"> <span class="float-right"> Class </span></label>
           <div class="col-sm-7">
-            <select class="form-control form-control-sm" id="classType" style="display: inline-block; width: 100%" onchange="onClassChange()">
+            <select class="form-control form-control-sm" id="classType" style="display: inline-block; width: 100%">
               <option value="0" selected>Choose a Class..</option>
               <option value="ClassXA">Class X-A</option>
               <option value="ClassXB">Class X-B</option>
@@ -295,10 +294,7 @@
         <div class="form-group row">
           <label for="staticEmail" class="col-sm-4 col-form-label"> <span class="float-right"> Month/Year </span> </label>
           <div class="col-sm-7">
-            <select class="form-control form-control-sm" id="classType" style="display: inline-block; width: 100%" onchange="onClassChange()">
-              <option value="0" selected>Choose Month/Year..</option>
-              <option value="ClassXA">Class X-A</option>
-              <option value="ClassXB">Class X-B</option>
+            <select class="form-control form-control-sm" id="dateList" style="display: inline-block; width: 100%">
             </select>
           </div>
         </div>
