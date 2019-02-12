@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Students Collection Fees</title>
+
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified CSS -->
+  <!-- Use this on Producetion Server -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+  <!-- Use this on Development Server
+  <link href="assests/css/bootstrap.min.css" rel="stylesheet">-->
+
+  <!-- Custom Style CSS File-->
+  <link href="assests/css/style2.css" rel="stylesheet">
+
+</head>
+
+  <div class="wrapper-class">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="box-shadow: 0px 5px 16px -8px gray;padding: 8px 25px;background-color:#eee ! important">
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-bars"></i>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="form-inline my-2 my-lg-0" style="width: 75%">
+          <input class="form-control mr-sm-2 search" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn my-2 my-sm-0 suc-btn" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        <ul class="navbar-nav ul-nav">
+          <li class="nav-item dropdown li-1" style="margin-left: 10px;padding-left: 10px;">
+            <a class="nav-link dropdown-toggle" style="font-size: 11px; color: dimgray" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             <span class="nav-user">  <img src="assests/img/user/user.png" alt="image"></span> Ankit
+            </a>
+            <div class="dropdown-menu" style="min-width: 12rem;left:-100px" aria-labelledby="dropdownMenuLink">
+              <p class="text-center">Account</p>
+              <hr style="margin: 5px 0px;">
+              <a class="dropdown-item" href="screen2.html">Message <i class="fas fa-envelope float-right"></i></a>
+              <hr style="margin: 5px 0px;">
+              <a class="dropdown-item" href="#">Profile <i class="fas fa-user float-right"></i></a>
+              <a class="dropdown-item" href="#">Settings <i class="fas fa-cog float-right"></i></a>
+              <hr style="margin: 5px 0px;">
+              <a class="dropdown-item" href="#">Lock Account <i class="fas fa-lock float-right"></i></a>
+              <a class="dropdown-item" href="#">Logout <i class="fas fa-sign-out-alt float-right"></i></a>
+            </div>
+          </li>
+          <li class="nav-item active" style="display: flex; align-items: center;color: dimgray">
+            <span class="nav-span"><i class="far fa-bell"></i></span>
+            <span class="nav-abs-span" style="background-color:#ffc107!important">8</span>
+          </li>
+          <li class="nav-item active" style="display: flex; align-items: center;color: dimgray">
+            <span class="nav-span"><i class="far fa-envelope"></i></span>
+            <span class="nav-abs-span" style="background-color:#007bff">5</span>
+          </li>
+          <li class="nav-item dropdown li-2" style="margin-right: 10px;padding-right: 10px;">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              English
+            </a>
+          </li>
+          <li class="nav-item active" style="display: flex; align-items: center;color: dimgray">
+            <span class="nav-span"><i class="fas fa-globe-americas"></i></span>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="main-table-content">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb" style="padding: 20px 0px;margin-bottom: 0px;padding-left: 10px;">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Fees Collection</li>
+        </ol>
+      </nav>
+
+      <div class="table-sec">
+        <div class="head">
+          <div class="">
+            <p style="margin-bottom: 0px">Students Collection Fees Table</p>
+          </div>
+          <div class="right-icon-sec">
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2 search" type="search" placeholder="ID Search here..." aria-label="Search">
+              <input class="form-control mr-sm-2 search" type="search" placeholder="Phone No Search here..." aria-label="Search">
+              <button class="btn btn-primary btn-sm" type="submit">Search</button>
+            </form>
+            <div class="right-icon">
+              <i class="fas fa-angle-down text-warning"></i>
+              <i class="fas fa-sync-alt text-success"></i>
+              <i class="fas fa-times text-danger"></i>
+            </div>
+          </div>
+        </div>
+        <div class="stu-table">
+          <table class="table table-striped fees-table" style="margin-bottom: 0px">
+            <thead>
+              <th style="vertical-align: middle;"> <input type="checkbox" name="" value="" style="margin-right: 10px"> ID</th>
+              <th>Photo</th>
+              <th>Name</th>
+              <th>Gender</th>
+              <th>Parents Name</th>
+              <th>Class </th>
+              <th>Section</th>
+              <th>Fees</th>
+              <th>Status</th>
+              <th>Phone</th>
+              <th>E-mail</th>
+              <th>Date</th>
+              <th>Action</th>
+            </thead>
+            <tbody id="studentsFeesList">
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>@Copyright 2018</p>
+    </footer>
+  </div>
+
+</body>
+  <!-- jQuery, Popper, Bootstrap, library -->
+
+  <!-- Use this on Producetion Server -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+  <!-- Use this on Development Server
+  <script type="text/javascript" src="assests/js/jquery.min.js"></script>
+  <script type="text/javascript" src="assests/main/js/popper.min.js"></script>
+  <script type="text/javascript" src="assests/main/js/bootstrap.min.js"></script> -->
+
+  <!-- Custom Java Script -->
+  <script type="text/javascript" src="assests/js/script2.js"></script>
+</html>
