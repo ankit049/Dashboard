@@ -204,3 +204,62 @@ footer > p {
   color: dimgray;
   letter-spacing: 1px;
 }
+
+
+/* Fees Demand Table Css */
+.sh-container {
+  padding : 15px;
+}
+.sh-container > p.p {
+  font-size: 20px;
+  color: dimgray;
+}
+.sh-container .card-header {
+  padding: 0px;
+}
+.sh-container .card-header  button {
+  width: 100%;
+  text-align: left;
+  text-decoration: none;
+}
+.sh-container .card {
+  margin-bottom: 20px;
+}
+.sh-container .card .card-body > button {
+  font-size: 13px;
+  margin-right: 10px;
+  padding: 4px 15px;
+}
+.fees-demand-table thead{
+  background: #13a774;
+  color: white;
+  font-size: 13px;
+  text-align: center;
+}
+.fees-demand-table tbody{
+  font-size: 13px;
+  text-align: center;
+}
+.amount {
+  background-color: #a6d1ff;
+  color: #0079fb;
+  font-weight: bold;
+}
+.to-be-paid {
+  background-color: #fff3cf;
+  color: #e0a800;
+  font-weight: bold;
+}
+.paid-amount {
+  background-color: #baeec5;
+  color: #218838;
+  font-weight: bold;
+}
+.cancelled {
+  background-color: #f9dfe2;
+  color: #c82333;
+  font-weight: bold;
+}
+.fees-view > a {
+  color: dodgerblue !important;
+}

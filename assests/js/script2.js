@@ -51,10 +51,35 @@ const studentFeesList = students.map(student => {
   return list;
 });
 
+// feeDemand'table array
+const feesDemands = [
+  {name: 'Standard I(20)', studentType: 'Old', amount: '1,00,000.0', paidAmount: '1,00,000.0', cancelled: '0.0', toBePaid: '0.0'},
+  {name: 'Standard II(20)', studentType: 'Old', amount: '1,00,000.0', paidAmount: '1,00,000.0', cancelled: '0.0', toBePaid: '0.0'},
+  {name: 'Standard III(20)', studentType: 'Old', amount: '1,00,000.0', paidAmount: '1,00,000.0', cancelled: '0.0', toBePaid: '0.0'},
+  {name: 'Standard IV(20)', studentType: 'Old', amount: '1,00,000.0', paidAmount: '1,00,000.0', cancelled: '0.0', toBePaid: '0.0'},
+  {name: 'Standard V(20)', studentType: 'Old', amount: '1,00,000.0', paidAmount: '1,00,000.0', cancelled: '0.0', toBePaid: '0.0'},
+];
+
+const feesDemandsList = feesDemands.map(feesDemand => (
+  `<tr>
+    <td style="color: dimgray">${feesDemand.name}</td>
+    <td style="color: dimgray">${feesDemand.studentType}</td>
+    <td class="amount">${feesDemand.amount}</td>
+    <td class="paid-amount">${feesDemand.paidAmount}</td>
+    <td class="cancelled">${feesDemand.cancelled}</td>
+    <td class="to-be-paid">${feesDemand.toBePaid}</td>
+    <td class="fees-view"><a href="#"><i class="fas fa-link"></i></a></td>
+  </tr>`
+));
+
 //insert attendanceList on DOM
 (function() {
    var getElement = document.getElementById("studentsFeesList");
+   var getElement2 = document.getElementById("feeDemandTable");
    if(getElement) {
     getElement.innerHTML = studentFeesList.join('');
+   }
+   if(getElement2) {
+    getElement2.innerHTML = feesDemandsList.join('');
    }
 })();
