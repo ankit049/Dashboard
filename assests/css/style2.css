@@ -263,3 +263,120 @@ footer > p {
 .fees-view > a {
   color: dodgerblue !important;
 }
+
+
+/* Transations Details Css */
+.transc-wrapper {
+  background-color: whitesmoke;
+  padding: 15px 25px;
+}
+.transc-wrapper > div {
+  background-color: white;
+  margin-top: 15px;
+}
+.sec1 {
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  grid-column-gap: 15px;
+  background-color: transparent ! important;
+}
+.sec1 > div {
+  background-color: white;
+  padding: 15px 10px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  box-shadow: 0px 2px 15px -8px grey;
+}
+.prog {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.prog > div {
+  flex-grow: 1;
+}
+.prog > div > span {
+  font-size: 12px;
+  color: dimgray;
+}
+.prog > i {
+  margin-right: 10px;
+  margin-bottom: -10px;
+}
+.prog > p {
+  margin-bottom: -15px;
+  margin-left: 10px;
+  font-size: 10px;
+  color: dimgray;
+}
+.sec2 {
+  background-color: white;
+  padding: 15px 10px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  box-shadow: 0px 2px 15px -8px grey;
+}
+.ssec2 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.ssec2 > div {
+  text-align: center;
+  border-right: 1px solid silver;
+  font-size: 13px;
+}
+.ssec2 > div > i {
+  margin-bottom: 7px;
+  margin-right: 5px;
+}
+.ssec2 > div:last-of-type {
+  border-right: none;
+}
+.m-b-5 {
+  margin-bottom: 5px;
+}
+.sec3 {
+  padding: 15px 10px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  box-shadow: 0px 2px 15px -8px grey;
+}
+.sec4 {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  background-color: transparent ! important;
+  overflow-y: auto;
+}
+.sec4 > div {
+  padding: 15px 10px;
+  background-color: white;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  box-shadow: 0px 2px 15px -8px grey;
+}
+.ssec4-users {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+  margin: 7px 0px;
+}
+.ssec4-users > div:nth-of-type(1) {
+  width: 45px;
+}
+.ssec4-users > div:nth-of-type(1) > img {
+  border-radius: 50%;
+}
+.ssec4-users > div:nth-of-type(2) {
+  margin-left: 10px;
+}
+.ssec4-users > div:nth-of-type(2) > h4 {
+  font-size: 13px;
+  margin-bottom: 0px;
+}
+.ssec4-users > div:nth-of-type(2) > p {
+  margin-bottom: 0px;
+  font-size: 11px;
+}
