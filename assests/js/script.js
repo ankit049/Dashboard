@@ -20,17 +20,17 @@ const studentName = [
   {name: 'Anish Shrivastav', class: 'ClassXB'}
 ];
 
-const generateAttendanceList = (name) => (
+const generateAttendanceList = (name, key) => (
   `<tr>
     <td colspan="2" class="btn-td"><button><i class="fas fa-file-alt"></i></button> <a href="#"> ${name}</a> </td>
-    <td><button type="button" class="td-btn btn btn-default btn-sm present" onclick="changBtnColor(event, 'present')">Present</button></td>
-    <td><button type="button" class="td-btn btn btn-default btn-sm absent" onclick="changBtnColor(event, 'absent')">Absent</button></td>
-    <td><button type="button" class="td-btn btn btn-default btn-sm tardy" onclick="changBtnColor(event, 'tardy')">Tardy</button></td>
+    <td><button type="button" class="td-btn btn btn-default btn-sm present key${key}" onclick="changBtnColor(event, 'present', 'key${key}')">Present</button></td>
+    <td><button type="button" class="td-btn btn btn-default btn-sm absent key${key}" onclick="changBtnColor(event, 'absent', 'key${key}')">Absent</button></td>
+    <td><button type="button" class="td-btn btn btn-default btn-sm tardy key${key}" onclick="changBtnColor(event, 'tardy', 'key${key}')">Tardy</button></td>
   </tr>`
 )
 
-const attendanceList = studentName.map(name => {
-  let list = generateAttendanceList(name.name);
+const attendanceList = studentName.map((name, key) => {
+  let list = generateAttendanceList(name.name, key);
   return list;
 });
 
@@ -53,11 +53,22 @@ function clearAllBtnClass() {
   });
 }
 
-function changBtnColor(e, val) {
+function clearSpecificBtnClass(key) {
+  var getAllElements = document.querySelectorAll("."+key);
+
+  getAllElements.forEach(function(element) {
+    element.classList.remove("btn-primary");
+    element.classList.remove("btn-success");
+    element.classList.remove("btn-danger");
+    element.style.color = "dimgray";
+  });
+}
+
+function changBtnColor(e, val, key) {
   console.log(e.target);
   console.log(val);
 
-  clearAllBtnClass();
+  clearSpecificBtnClass(key);
 
   if(val === "present") {
     e.target.classList.add("btn-primary");
@@ -128,9 +139,9 @@ function onClassChange() {
     d = document.getElementById("classType").value;
     console.log(d);
     if(d){
-      const attendanceList = studentName.map(name => {
+      const attendanceList = studentName.map((name, key) => {
         if(d === name.class) {
-          return generateAttendanceList(name.name);
+          return generateAttendanceList(name.name, key);
         }
       });
 
