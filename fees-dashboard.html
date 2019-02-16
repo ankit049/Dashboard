@@ -27,6 +27,20 @@
 </head>
   <div class="sh-container">
     <p class="p">Overall Fees Demand</p>
+    <div class="dropdown float-right shc-btn">
+      <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown">
+        Custom Reports
+      </button>
+      <div class="dropdown-menu dms">
+        <a class="btn btn-default btn-sm shca" data-toggle="modal" data-target="#customreport1">
+          Profession Based Reports
+        </a>
+        <hr style="margin: 0px" />
+        <a class="btn btn-default btn-sm shca" data-toggle="modal" data-target="#customreport2">
+          Income Based Reports
+        </a>
+      </div>
+    </div>
     <div>
       <div class="card">
         <div class="card-header" id="overall">
@@ -98,6 +112,114 @@
               </tbody>
             </table>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- All Modals -->
+    <div class="modal fade" id="customreport1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: whitesmoke">
+          <h5 class="modal-title" id="exampleModalLabel" style="color: dimgray;font-family: sans-serif;">Profession Wise Reports</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group row">
+            <label for="staticEmail" class="col-sm-4 col-form-label"> <span class="float-right"> Class </span></label>
+            <div class="col-sm-7">
+              <select class="form-control form-control-sm" id="classType" style="display: inline-block; width: 100%">
+                <option value="0" selected>Choose a Class..</option>
+                <option value="ClassXA">Class X-A</option>
+                <option value="ClassXB">Class X-B</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="staticEmail" class="col-sm-4 col-form-label"> <span class="float-right"> Select Date From</span> </label>
+            <div class="col-sm-7">
+              <input type="date" >
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="staticEmail" class="col-sm-4 col-form-label"> <span class="float-right"> Select Date To</span> </label>
+            <div class="col-sm-7">
+              <input type="date">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="staticEmail" class="col-sm-4 col-form-label"> <span class="float-right"> Profession Category </span></label>
+            <div class="col-sm-7">
+              <select class="form-control form-control-sm" id="classType" multiple style="display: inline-block; width: 100%">
+                <option value="0" selected>Choose a Profession Category..</option>
+                <option value="ClassXA">Government Service</option>
+                <option value="ClassXA">Business </option>
+                <option value="ClassXA">Farming </option>
+                <option value="ClassXA">Private Service</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer" style="background-color: whitesmoke">
+          <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+          <a  href="fees-dashboard-profession-wise.html" class="btn btn-primary btn-sm">Run</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="customreport2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: whitesmoke">
+          <h5 class="modal-title" id="exampleModalLabel" style="color: dimgray;font-family: sans-serif;">Income Wise Reports</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group row">
+            <label for="staticEmail" class="col-sm-5 col-form-label"> <span class="float-right"> Class </span></label>
+            <div class="col-sm-6">
+              <select class="form-control form-control-sm" id="classType" style="display: inline-block; width: 100%">
+                <option value="0" selected>Choose a Class..</option>
+                <option value="ClassXA">Class X-A</option>
+                <option value="ClassXB">Class X-B</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="staticEmail" class="col-sm-5 col-form-label"> <span class="float-right"> Select Date From</span> </label>
+            <div class="col-sm-6">
+              <input type="date" >
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="staticEmail" class="col-sm-5 col-form-label"> <span class="float-right"> Select Date To</span> </label>
+            <div class="col-sm-5">
+              <input type="date">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="staticEmail" class="col-sm-5 col-form-label"> <span class="float-right"> Enter Income Range From</span> </label>
+            <div class="col-sm-6">
+              <input type="text" placeholder="₹0"  style="padding-left: 7px;">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="staticEmail" class="col-sm-5 col-form-label"> <span class="float-right"> Enter Income Range From</span> </label>
+            <div class="col-sm-6">
+              <input type="text" placeholder="₹1,000,000" style="padding-left: 7px;">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer" style="background-color: whitesmoke">
+          <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+          <a  href="fees-dashboard-income-wise.html" class="btn btn-primary btn-sm">Run</a>
         </div>
       </div>
     </div>

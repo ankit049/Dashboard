@@ -214,6 +214,26 @@ footer > p {
   font-size: 20px;
   color: dimgray;
 }
+.shc-btn {
+  margin-top: -45px;
+}
+.shc-btn > button {
+  color: dimgray;
+  font-size: 13px;
+}
+.dms {
+  transform: translate3d(-60px, 35px, 0px) ! important;
+  text-align: center;
+}
+.shca {
+  margin: 5px;
+  cursor: pointer;
+  font-size: 13px;
+}
+.shca:hover {
+  margin: 5px;
+  background-color: whitesmoke;
+}
 .sh-container .card-header {
   padding: 0px;
 }
