@@ -53,11 +53,11 @@ const studentFeesList = students.map(student => {
 
 // feeDemand'table array
 const feesDemands = [
-  {name: 'Standard I(20)', studentType: 'Old', amount: '1,00,000.0', paidAmount: '1,00,000.0', cancelled: '0.0', toBePaid: '0.0'},
-  {name: 'Standard II(20)', studentType: 'Old', amount: '13,00,000.0', paidAmount: '1,00,000.0', cancelled: '0.0', toBePaid: '3,00,000.0'},
-  {name: 'Standard III(20)', studentType: 'Old', amount: '9,00,000.0', paidAmount: '9,00,000.0', cancelled: '0.0', toBePaid: '0.0'},
-  {name: 'Standard IV(20)', studentType: 'Old', amount: '11,00,000.0', paidAmount: '5,00,000.0', cancelled: '0.0', toBePaid: '6,00,000.0'},
-  {name: 'Standard V(20)', studentType: 'Old', amount: '14,00,000.0', paidAmount: '1,00,000.0', cancelled: '0.0', toBePaid: '4,00,000.0'},
+  {name: 'Standard I(20)', studentType: 'Old', amount: '60,000.0', paidAmount: '50,000.0', cancelled: '0.0', toBePaid: '10,000.0'},
+  {name: 'Standard II(20)', studentType: 'Old', amount: '55,000.0', paidAmount: '55,000.0', cancelled: '0.0', toBePaid: '0.0'},
+  {name: 'Standard III(10)', studentType: 'Old', amount: '35,000.0', paidAmount: '35,000.0', cancelled: '0.0', toBePaid: '0.0'},
+  {name: 'Standard IV(20)', studentType: 'Old', amount: '70,000.0', paidAmount: '50,000.0', cancelled: '0.0', toBePaid: '20,000.0'},
+  {name: 'Standard V(10)', studentType: 'Old', amount: '85,000.0', paidAmount: '45,000.0', cancelled: '0.0', toBePaid: '40,000.0'},
 ];
 
 const feesDemandsList = feesDemands.map(feesDemand => (
