@@ -355,6 +355,91 @@ body {
 #demo > ul > li {
   margin: 3px 0px;
 }
+
+.user-cal-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 25px;
+  margin-top: 15px;
+}
+.cal {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-top: 15px;
+  grid-column-gap: 1px;
+  grid-row-gap: 1px;
+}
+.cal > span {
+  border: 1px solid silver;
+  padding: 7px 0px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cal-h {
+  background-color: dimgray;
+  color: white;
+  border: none !important;
+}
+
+.cir {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+.cir > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.rbg {
+  background-color: #f11d47;
+}
+.bbg {
+  background-color: #0b4e85
+}
+.gbg {
+  background-color: #0f9949;
+}
+.hdbg {
+  background-color: #b4594e;
+}
+.lbg {
+  background-color: #e7ac44;
+}
+.spn1 {
+  display: inline-block;
+  padding: 7px 15px;
+  color: white;
+  min-width: 100px;
+}
+.spn2 {
+  display: inline-block;
+  padding: 7px 15px;
+  margin-left: -10px;
+  text-align: center;
+  padding-left: 20px;
+  min-width: 55px;
+}
+.user-cal-icon {
+  background-color: #ddd;
+  padding: 7px 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+.user-cal-icon > span {
+  color: dimgray;
+  font-weight: bold;
+}
+
 @media (max-width: 992px) {
   .banner_wrapper {
     top: 4px;

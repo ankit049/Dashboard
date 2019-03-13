@@ -51,10 +51,10 @@ window.onload = function () {
     {
      type: "doughnut",
      dataPoints: [
-     {  y: 18, indexLabel: "Present" },
-     {  y: 4, indexLabel: "Holiday" },
-     {  y: 6, indexLabel: "Leave" },
-     {  y: 2, indexLabel: "Absent" },
+     {  y: 75, indexLabel: "Present (75%)" },
+     {  y: 5, indexLabel: "Holiday (5%)" },
+     {  y: 8, indexLabel: "Leave (8%)" },
+     {  y: 12, indexLabel: "Absent (12%)" },
      ]
    }
    ]
@@ -65,10 +65,10 @@ window.onload = function () {
     {
      type: "doughnut",
      dataPoints: [
-     {  y: 18, indexLabel: "Present" },
-     {  y: 4, indexLabel: "Holiday" },
-     {  y: 6, indexLabel: "Leave" },
-     {  y: 2, indexLabel: "Absent" },
+     {  y: 50, indexLabel: "Present (50%)" },
+     {  y: 15, indexLabel: "Holiday (15%)" },
+     {  y: 20, indexLabel: "Leave (20%)" },
+     {  y: 15, indexLabel: "Absent (15%)" },
      ]
    }
    ]

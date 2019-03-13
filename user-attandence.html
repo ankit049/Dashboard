@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Dashboard</title>
+
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified CSS -->
+  <!-- Use this on Producetion Server -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+  <!-- Custom Style CSS File-->
+  <link href="assests/css/user-profile.css" rel="stylesheet">
+
+</head>
+<body>
+  <div class="user-profile-wrapper">
+    <div class="container no-padding-xs">
+      <div class="profile_banner_wrapper">
+        <header class="profile_banner  position-relative"
+          style="background-image:url('./assests/img/student_cover_pic.jpeg')">
+          <div class="clearfix">
+            <div class="banner_wrapper clearfix profile_username">
+              <div class="position-relative">
+                <div class="user_profile_pic_wrapper">
+                  <div class="position-relative">
+                   <img class="user_profile_pic" src="./assests/img/user/user_5.jpeg" style="width: 100%;max-width: 100%">
+                  </div>
+                </div>
+
+                <div class="banner_text">
+                  <h2> Student </h2>
+                  <span class="profile_follow_btns">
+                    <button class="btn btn-sm margin-5 btn-primary text-bold" >
+                      <i class="fas fa-pen"></i> Edit Personal Info
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="coloroverlayblack"></div>
+        </header>
+
+        <div class="profile_menu">
+          <div class="col-sm-12 pad-left">
+            <ul class="profile_menu_ul col-sm-12">
+      				<li><a href="./user-profile.html">About </a></li>
+      				<li><a href="./user-attandence.html" class="active">Attendance</a></li>
+      				<li><a href="./academic-performance.html">Academic Performance</a></li>
+      				<li><a href="">Remark </a></li>
+      				<li><a href="">Memory</a></li>
+      			</ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+    	<div class="row margin-top-20">
+    		<div class="col-md-12 user-profile-main-sec">
+          <div class="card">
+            <div class="card-header">
+              <span class="dks-c text-bold">
+                 <i class="far fa-calendar-alt"></i>
+                 Student's Attendance Dashboard |
+                 <span>
+                   <input type="date" id="date"/>
+                    choose date
+                 </span>
+              </span>
+            </div>
+            <div class="card-body">
+            <!-- <div class="card-body" style="background-color: #3b3b3b;"> -->
+              <p class="">Today's Status: <span class="badge badge-success">Present</span></p>
+              <p class="pt spt">Class Attendance </p>
+              <div class="chart-container">
+                <div style="background-color: papayawhip;display: flex; align-items: center;">
+                  <table class="table info-table" style="margin-bottom: 0px;">
+                    <tbody style="display: flex;flex-direction: column;align-items: center;">
+                      <tr>
+                        <th class="b-n" style="flex-basis: auto">Present</th>
+                        <td class="b-n">: 18</td>
+                      </tr>
+                      <tr>
+                        <th class="b-n" style="flex-basis: auto">Half Day</th>
+                        <td class="b-n">: 3</td>
+                      </tr>
+                      <tr>
+                        <th class="b-n" style="flex-basis: auto">Absent</th>
+                        <td class="b-n">: 2</td>
+                      </tr>
+                      <tr>
+                        <th class="b-n" style="flex-basis: auto">Leave</th>
+                        <td class="b-n">: 6</td>
+                      </tr>
+                        <tr>
+                          <th class="b-n" style="flex-basis: auto">Holiday</th>
+                          <td class="b-n">: 4</td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div>
+                  <div id="chartContainer1" style="height: 300px; width: 100%;"></div>
+                </div>
+              </div>
+
+              <p class="pt spt">Subject Wise Attendance </p>
+              <div class="chart-container">
+                <div>
+                  <div id="chartContainer2" style="height: 300px; width: 100%;"></div>
+                  <p class="pt spt2" style="background-color: #cde0c3;">English </p>
+                </div>
+                <div>
+                  <div id="chartContainer3" style="height: 300px; width: 100%;"></div>
+                  <p class="pt spt2" style="background-color: #cde0c3;">Math </p>
+                </div>
+                <div>
+                  <div id="chartContainer4" style="height: 300px; width: 100%;"></div>
+                  <p class="pt spt2" style="background-color: #cde0c3;">Physics </p>
+                </div>
+                <div>
+                  <div id="chartContainer5" style="height: 300px; width: 100%;"></div>
+                  <p class="pt spt2" style="background-color: #cde0c3;">Chemistry </p>
+                </div>
+              </div>
+
+              <p class="pt spt"> <i class="fas fa-user-graduate"></i> Top Performers </p>
+              <div class="tp-user-wrapper">
+                <div class="pt-profile" style="background-color: #3b3b3b">
+                  <p class="pt tppt"> Shreyash </p>
+                  <div class="tp-user">
+                    <div>
+                      <div class="tp-imgw">
+                        <img src="./assests/img/user/user2.jpeg" alt="">
+                      </div>
+                      <p class="tpa fffh">New Attendance</p>
+                      <p style="color: #e64d4d;font-size: 30px;">2</p>
+                    </div>
+                    <div>
+                      <p class="tpa fffh">Attendance</p>
+                      <p class="tpbh">35%</p>
+                      <p style="color: #e64d4d;font-size: 13px;">52 of 150
+                         <span style="color: #70e979;font-weight: bold;">+22%</span> </p>
+                      <p class="tpa fffh" style="margin-bottom: 5px;">TOP Classes</p>
+                      <p class="tpa1">CHEMISTRY</p>
+                      <p class="tpa1">MATHEMATICS</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-profile" style="background-color: #3b3b3b">
+                  <p class="pt tppt"> Rohit Singh </p>
+                  <div class="tp-user">
+                    <div>
+                      <div class="tp-imgw">
+                        <img src="./assests/img/user/user_1.jpeg" alt="">
+                      </div>
+                      <p class="tpa fffh">New Attendance</p>
+                      <p style="color: #e64d4d;font-size: 30px;">2</p>
+                    </div>
+                    <div>
+                      <p class="tpa fffh">Attendance</p>
+                      <p class="tpbh">63%</p>
+                      <p style="color: #e64d4d;font-size: 13px;">47 of 75
+                         <span style="color: #70e979;font-weight: bold;">+36%</span> </p>
+                      <p class="tpa fffh" style="margin-bottom: 5px;">TOP Classes</p>
+                      <p class="tpa1">MATHEMATICS</p>
+                      <p class="tpa1">PHYSICS</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <p class="pt spt" style="margin-top: 60px;"> <i class="fas fa-user"></i> Poor Performers </p>
+              <div class="tp-user-wrapper">
+                <div class="pt-profile" style="background-color: #eee;box-shadow: 0px 4px 15px -8px grey;">
+                  <p class="pt tppt"> Alok Kumar </p>
+                  <div class="tp-user">
+                    <div>
+                      <div class="tp-imgw">
+                        <img src="./assests/img/user/user_3.jpeg" alt="">
+                      </div>
+                    </div>
+                    <div>
+                      <p class="tpa fffh">Attendance</p>
+                      <p class="tpbh">15%</p>
+                      <p style="color: #e64d4d;font-size: 13px;">3 of 20
+                         <span style="color: #70e979;font-weight: bold;">0%</span> </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="pt-profile" style="background-color: #eee;box-shadow: 0px 4px 15px -8px grey;">
+                  <p class="pt tppt"> Preetam </p>
+                  <div class="tp-user">
+                    <div>
+                      <div class="tp-imgw">
+                        <img src="./assests/img/user/user_4.jpeg" alt="">
+                      </div>
+                    </div>
+                    <div>
+                      <p class="tpa fffh">Attendance</p>
+                      <p class="tpbh">36%</p>
+                      <p style="color: #e64d4d;font-size: 13px;">9 of 25
+                         <span style="color: #70e979;font-weight: bold;">+40%</span> </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <p class="pt spt" style="margin-top: 60px;">  <i class="far fa-calendar-alt"></i> Overall Reports </p>
+              <div class="user-cal-wrapper">
+                <div style="background-color: papayawhip;display: flex; align-items: center;">
+                  <table class="table info-table" style="margin-bottom: 0px;">
+                    <tbody style="display: flex;flex-direction: column;align-items: center;">
+                      <tr>
+                        <td class="b-n" style="flex-basis: auto">
+                           <span class="spn1 gbg" style="border: 1px solid #0f9949">Present</span>
+                           <span class="spn2" style="border: 1px solid #0f9949">6</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="spn1 hdbg" style="border: 1px solid #b4594e">Half Day</span>
+                          <span class="spn2" style="border: 1px solid #b4594e">1</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="spn1 rbg" style="border: 1px solid #f11d47">Absent</span>
+                          <span class="spn2" style="border: 1px solid #f11d47">1</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span class="spn1 lbg" style="border: 1px solid #e7ac44">Leave</span>
+                          <span class="spn2" style="border: 1px solid #e7ac44">1</span>
+                        </td>
+                      </tr>
+                        <tr>
+                          <td>
+                            <span class="spn1 bbg" style="border: 1px solid #0b4e85">Holiday</span>
+                            <span class="spn2" style="border: 1px solid #0b4e85">2</span>
+                          </td>
+                        </tr>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="user-cal">
+                  <div class="user-cal-icon">
+                    <span>
+                      <i class="fas fa-caret-down" style="color: slategrey; margin-right: 5px;"></i>
+                      <i class="fas fa-chevron-circle-left" style="color: slategrey"></i>
+                    </span>
+                    <span>March 2019</span>
+                    <span>
+                      <i class="fas fa-chevron-circle-right" style="color:slategrey "></i>
+                      <i class="fas fa-sort-up" style="color: slategrey;margin-left: 5px;"></i>
+                    </span>
+                  </div>
+                  <div class="cal">
+                    <span class="sun text-danger">Sun</span>
+                    <span class="cal-h">Mon</span>
+                    <span class="cal-h">Tue</span>
+                    <span class="cal-h">Wed</span>
+                    <span class="cal-h">Thu</span>
+                    <span class="cal-h">Fri</span>
+                    <span class="cal-h">Sat</span>
+                    <!-- ............................. -->
+                    <span class="text-danger"></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span> <b class="cir rbg"> <span>1</span></b></span>
+                    <span> <b class="cir bbg"> <span>2</span></b> </span>
+                    <!-- ............................. -->
+                    <span class="text-danger"> <b>3</b></span>
+                    <span> <b class="cir bbg"> <span>4</span></b></span>
+                    <span> <b class="cir gbg"> <span>5</span></b></span>
+                    <span> <b class="cir gbg"> <span>6</span></b></span>
+                    <span> <b class="cir gbg"> <span>7</span></b></span>
+                    <span> <b class="cir gbg"> <span>8</span></b></span>
+                    <span> <b class="cir hdbg"> <span>9</span></b></span>
+                    <!-- ............................. -->
+                    <span class="text-danger"> <b>10</b></span>
+                    <span> <b class="cir lbg"> <span>11</span></b></span>
+                    <span> <b class="cir gbg"> <span>12</span></b></span>
+                    <span> <b class="cir gbg"> <span>13</span></b></span>
+                    <span> <b>14</b></span>
+                    <span> <b>15</b></span>
+                    <span> <b>16</b></span>
+                    <!-- ............................. -->
+                    <span class="text-danger"> <b>17</b></span>
+                    <span> <b>18</b></span>
+                    <span> <b>19</b></span>
+                    <span> <b>20</b></span>
+                    <span> <b>21</b></span>
+                    <span> <b>22</b></span>
+                    <span> <b>23</b></span>
+                    <!-- ............................. -->
+                    <span class="text-danger"> <b>24</b></span>
+                    <span> <b>25</b></span>
+                    <span> <b>26</b></span>
+                    <span> <b>27</b></span>
+                    <span> <b>28</b></span>
+                    <span> <b>29</b></span>
+                    <span> <b>30</b></span>
+                    <!-- ............................. -->
+                    <span class="text-danger"><b>31</b></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <!-- ............................. -->
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+    		</div>
+    	</div>
+    </div>
+
+  </div>
+</body>
+  <!-- jQuery, Popper, Bootstrap, library -->
+
+  <!-- Use this on Producetion Server -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+  <!-- Use this on Development Server
+  <script type="text/javascript" src="assests/js/jquery.min.js"></script>
+  <script type="text/javascript" src="assests/main/js/popper.min.js"></script>
+  <script type="text/javascript" src="assests/main/js/bootstrap.min.js"></script> -->
+
+  <!-- Custom Java Script -->
+  <script type="text/javascript" src="assests/js/chart.js"></script>
+  <script>
+    $(document).ready(function(){
+      Date.prototype.toDateInputValue = (function() {
+          var local = new Date(this);
+          local.setMinutes(this.getMinutes() - this.getTimezoneOffset());
+          return local.toJSON().slice(0,10);
+      });
+      $('#date').val(new Date().toDateInputValue());
+    })
+  </script>
+</html>
