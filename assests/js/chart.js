@@ -9,10 +9,10 @@ window.onload = function () {
     {
      type: "doughnut",
      dataPoints: [
-     {  y: 75, indexLabel: "Present (75%)" },
-     {  y: 5, indexLabel: "Holiday (5%)" },
-     {  y: 5, indexLabel: "Leave (5%)" },
-     {  y: 15, indexLabel: "Absent (15%)" },
+     {  y: 15, indexLabel: "Present (57%)" },
+     {  y: 4, indexLabel: "Holiday (15%)" },
+     {  y: 2, indexLabel: "Leave (7%)" },
+     {  y: 5, indexLabel: "Absent (19%)" },
      ]
    }
    ]
@@ -23,10 +23,10 @@ window.onload = function () {
     {
      type: "doughnut",
      dataPoints: [
-     {  y: 60, indexLabel: "Present (65%)" },
-     {  y: 5, indexLabel: "Holiday (5%)" },
-     {  y: 15, indexLabel: "Leave (15%)" },
-     {  y: 20, indexLabel: "Absent (20%)" },
+     {  y: 15, indexLabel: "Present (57%)" },
+     {  y: 4, indexLabel: "Holiday (15%)" },
+     {  y: 2, indexLabel: "Leave (7%)" },
+     {  y: 5, indexLabel: "Absent (19%)" },
      ]
    }
    ]
@@ -37,10 +37,10 @@ window.onload = function () {
     {
      type: "doughnut",
      dataPoints: [
-     {  y: 65, indexLabel: "Present (65%)" },
-     {  y: 5, indexLabel: "Holiday (5%)" },
-     {  y: 18, indexLabel: "Leave (18%)" },
-     {  y: 12, indexLabel: "Absent (12%)" },
+     {  y: 13, indexLabel: "Present (50%)" },
+     {  y: 4, indexLabel: "Holiday (15%)" },
+     {  y: 5, indexLabel: "Leave (19%)" },
+     {  y: 4, indexLabel: "Absent (15%)" },
      ]
    }
    ]
@@ -51,10 +51,10 @@ window.onload = function () {
     {
      type: "doughnut",
      dataPoints: [
-     {  y: 75, indexLabel: "Present (75%)" },
-     {  y: 5, indexLabel: "Holiday (5%)" },
-     {  y: 8, indexLabel: "Leave (8%)" },
-     {  y: 12, indexLabel: "Absent (12%)" },
+     {  y: 17, indexLabel: "Present (65%)" },
+     {  y: 4, indexLabel: "Holiday (15%)" },
+     {  y: 1, indexLabel: "Leave (3%)" },
+     {  y: 4, indexLabel: "Absent (15%)" },
      ]
    }
    ]
@@ -65,10 +65,10 @@ window.onload = function () {
     {
      type: "doughnut",
      dataPoints: [
-     {  y: 50, indexLabel: "Present (50%)" },
-     {  y: 15, indexLabel: "Holiday (15%)" },
-     {  y: 20, indexLabel: "Leave (20%)" },
-     {  y: 15, indexLabel: "Absent (15%)" },
+     {  y: 19, indexLabel: "Present (73%)" },
+     {  y: 4, indexLabel: "Holiday (15%)" },
+     {  y: 1, indexLabel: "Leave (3%)" },
+     {  y: 2, indexLabel: "Absent (7%)" },
      ]
    }
    ]

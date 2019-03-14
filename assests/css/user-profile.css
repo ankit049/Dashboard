@@ -440,6 +440,31 @@ body {
   font-weight: bold;
 }
 
+.progress-sec {
+  display: flex;
+  flex-direction: column;
+}
+
+.progress-sec .progress > .progress-bar {
+  font-size: 10px;
+}
+.progress-sec .progress {
+  margin-top: 10px;
+
+}
+.progress-title {
+  background-color: white;
+  min-width: 80px;
+}
+.progress-wrap {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+.canvasjs-chart-canvas {
+  /* width: 375px ! important; */
+}
 @media (max-width: 992px) {
   .banner_wrapper {
     top: 4px;
