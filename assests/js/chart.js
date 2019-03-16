@@ -128,7 +128,7 @@ window.onload = function () {
 
     var options = {
       chart: {
-        title: 'Student Weekly Analysis',
+        title: 'Student Weekly Attendance Analysis',
         subtitle: 'Present, Leave, Absent and Holiday: March 2019',
       },
       bars: 'vertical',
@@ -149,7 +149,7 @@ window.onload = function () {
 
     var options = {
       chart: {
-        title: 'Student Monthly Analysis',
+        title: 'Student Monthly Attendance Analysis',
         subtitle: 'Present, Leave, Absent and Holiday: Year 2019',
       },
       bars: 'vertical',
