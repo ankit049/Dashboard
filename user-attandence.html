@@ -57,8 +57,8 @@
       				<li><a href="./user-profile.html">About </a></li>
       				<li><a href="./user-attandence.html" class="active">Attendance</a></li>
       				<li><a href="./academic-performance.html">Academic Performance</a></li>
-      				<li><a href="">Remark </a></li>
-      				<li><a href="">Memory</a></li>
+      				<li><a href="./remark.html">Remark </a></li>
+      				<li><a href="./memory.html">Memory</a></li>
       			</ul>
           </div>
         </div>
@@ -72,11 +72,7 @@
             <div class="card-header">
               <span class="dks-c text-bold">
                  <i class="far fa-calendar-alt"></i>
-                 Student's Attendance Dashboard |
-                 <span>
-                   <input type="date" id="date"/>
-                    choose date
-                 </span>
+                 Student's Attendance Dashboard
               </span>
             </div>
             <div class="card-body">
@@ -108,39 +104,40 @@
                    style="padding-bottom: 6px;vertical-align: 2px;padding-left: 10px;padding-right: 10px;">Present</span>
               </p>
               <div class="info-box">
-                <div>
-                  <div>
-                    <i class="far fa-calendar-alt"></i> <br>
-                    <span class="in-bx-title">Total Workdays</span> <br>
-                    <span style="font-size: 25px;color: #F37021;">26</span>
+                <div style="display: grid;grid-template-columns: 1fr 2fr;">
+                  <div class="big-box-lsec">
+                    <b class="cir"><span>74%</span></b>
                   </div>
-                </div>
-                <div>
-                  <div>
-                    <i class="fas fa-user-check"></i> <br>
-                    <span class="in-bx-title">Present</span> <br>
-                    <span style="font-size: 25px;color: #79bcf4;">15</span>
+                  <div style="border-left: none; display: grid; grid-template-columns: 1fr 1fr">
+                    <div style="display: flex;flex-direction: column;justify-content: space-between;">
+                      <span class="in-bx-title">Total Workdays</span> <br>
+                      <span style="font-size: 25px;color: #F37021;">185</span>
+                    </div>
+                    <div style="display: flex;flex-direction: column;justify-content: space-between;">
+                      <span class="in-bx-title">Present</span> <br>
+                       <span style="font-size: 25px;color: #79bcf4;">138</span>
+                    </div>
                   </div>
                 </div>
                 <div>
                   <div>
                     <i class="fas fa-user-clock"></i> <br>
                     <span class="in-bx-title">Leave</span> <br>
-                    <span style="font-size: 25px;color: #efc780;">2</span>
+                    <span style="font-size: 25px;color: #f88da2;">19</span>
                   </div>
                 </div>
                 <div>
                   <div>
                     <i class="fas fa-user-times"></i> <br>
                     <span class="in-bx-title">Absent</span> <br>
-                    <span style="font-size: 25px;color: #f88da2;">5</span>
+                    <span style="font-size: 25px;color: #efc780;">10</span>
                   </div>
                 </div>
                 <div>
                   <div>
                     <i class="fas fa-user"></i> <br>
                     <span class="in-bx-title">Holiday</span> <br>
-                    <span style="font-size: 25px;color: #72f1a7;">4</span>
+                    <span style="font-size: 25px;color: #72f1a7;">18</span>
                   </div>
                 </div>
               </div>
@@ -150,22 +147,22 @@
                   <div class="progress-wrap">
 
                     <div style="width: 80%;">
-                      <p class="pt spt ttp">Total Workdays 26 </p>
+                      <p class="pt spt ttp">Total Workdays 185 </p>
                       <div class="progress" style="width: 100%">
-                        <span class="progress-title">Present (15)</span>
-                        <div class="progress-bar" style="width:57%">57.7%</div>
+                        <span class="progress-title">Present (138)</span>
+                        <div class="progress-bar" style="width:60%">74.6%</div>
                       </div>
                       <div class="progress" style="width: 100%">
-                        <span class="progress-title">Leave (2)</span>
-                        <div class="progress-bar bg-danger" style="width:7%">7%</div>
+                        <span class="progress-title">Leave (19)</span>
+                        <div class="progress-bar bg-danger" style="width:11%">10.3%</div>
                       </div>
                       <div class="progress" style="width: 100%">
-                        <span class="progress-title">Absent (5)</span>
-                        <div class="progress-bar" style="width:19%; background-color: #fe7a07">19.2%</div>
+                        <span class="progress-title">Absent (10)</span>
+                        <div class="progress-bar" style="width:7%; background-color: #fe7a07">5.4%</div>
                       </div>
                       <div class="progress" style="width: 100%">
-                        <span class="progress-title">Holiday (4)</span>
-                        <div class="progress-bar bg-success" style="width:15%">15.4%</div>
+                        <span class="progress-title">Holiday (18)</span>
+                        <div class="progress-bar bg-success" style="width:10%">9.7%</div>
                       </div>
                     </div>
                   </div>
@@ -373,14 +370,4 @@
 
   <!-- Custom Java Script -->
   <script type="text/javascript" src="assests/js/chart.js"></script>
-  <script>
-    $(document).ready(function(){
-      Date.prototype.toDateInputValue = (function() {
-          var local = new Date(this);
-          local.setMinutes(this.getMinutes() - this.getTimezoneOffset());
-          return local.toJSON().slice(0,10);
-      });
-      $('#date').val(new Date().toDateInputValue());
-    })
-  </script>
 </html>

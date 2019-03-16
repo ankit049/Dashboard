@@ -18,10 +18,10 @@ window.onload = function () {
   function drawChart1() {
     var data1 = google.visualization.arrayToDataTable([
       ['title1', 'Hours per Day'],
-      ['Present', 15],
-      ['Leave',     2],
-      ['Absent',      5],
-      ['Holiday',  4],
+      ['Present', 138],
+      ['Leave',     19],
+      ['Absent',      10],
+      ['Holiday',  18],
     ]);
 
     var options1 = {

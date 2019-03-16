@@ -389,19 +389,28 @@ body {
 }
 
 .cir {
-  width: 30px;
-  height: 30px;
+  width: 65px;
+  height: 65px;
   display: inline-block;
   border-radius: 50%;
   color: white;
   text-align: center;
   position: relative;
+  border: 2px solid #93f3dc;
 }
 .cir > span {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+  font-size: 20px;
+  color: #93f3dc;
+}
+.big-box-lsec {
+  border-right: none!important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .rbg {
@@ -548,7 +557,7 @@ body {
 
 .info-box {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 2fr 1fr 1fr 1fr;
   grid-column-gap: 20px;
   margin-bottom: 20px;
 }
