@@ -80,53 +80,119 @@
               </span>
             </div>
             <div class="card-body">
-            <!-- <div class="card-body" style="background-color: #3b3b3b;"> -->
-              <p class="">Today's Status: <span class="badge badge-success">Present</span></p>
+              <table class="table table-bordered in-table">
+                <tbody>
+                  <tr>
+                    <th class="b-n" style="">Name</th>
+                    <td class="b-n"> Vimal Kumar</td>
+                    <th class="b-n" style="">Class</th>
+                    <td class="b-n"> 6-A</td>
+                    <th class="b-n" style="">Roll No.</th>
+                    <td class="b-n"> 32</td>
+                  </tr>
+                  <tr>
+                    <th class="b-n" style="">Father's Name</th>
+                    <td class="b-n">Mr. Pratap Kumar</td>
+                    <th class="b-n" style="">Mother's Name</th>
+                    <td class="b-n">Suneeta</td>
+                    <th class="b-n" style="">Class Teacher</th>
+                    <td class="b-n">Mr. Sachin Kumar</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <p style="border-left: 6px solid silver;padding-left: 10px;color: dimgray;font-size: 20px;font-weight: bold;border-bottom: 1px solid #ddd;padding-bottom: 7px;">
+                <i class="far fa-hand-point-right"></i>
+                Today's Status:
+                <span class="badge badge-success"
+                   style="padding-bottom: 6px;vertical-align: 2px;padding-left: 10px;padding-right: 10px;">Present</span>
+              </p>
+              <div class="info-box">
+                <div>
+                  <div>
+                    <i class="far fa-calendar-alt"></i> <br>
+                    <span class="in-bx-title">Total Workdays</span> <br>
+                    <span style="font-size: 25px;color: #F37021;">26</span>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <i class="fas fa-user-check"></i> <br>
+                    <span class="in-bx-title">Present</span> <br>
+                    <span style="font-size: 25px;color: #79bcf4;">15</span>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <i class="fas fa-user-clock"></i> <br>
+                    <span class="in-bx-title">Leave</span> <br>
+                    <span style="font-size: 25px;color: #efc780;">2</span>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <i class="fas fa-user-times"></i> <br>
+                    <span class="in-bx-title">Absent</span> <br>
+                    <span style="font-size: 25px;color: #f88da2;">5</span>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <i class="fas fa-user"></i> <br>
+                    <span class="in-bx-title">Holiday</span> <br>
+                    <span style="font-size: 25px;color: #72f1a7;">4</span>
+                  </div>
+                </div>
+              </div>
               <p class="pt spt">Class Attendance <span style="color: brown"> [ March 2019 ]</span> </p>
               <div class="chart-container">
                 <div style="" class="progress-sec">
-                  <p class="pt spt" style="background-color: white;font-size: 16px;">Total Workdays 26 </p>
                   <div class="progress-wrap">
+
                     <div style="width: 80%;">
+                      <p class="pt spt ttp">Total Workdays 26 </p>
                       <div class="progress" style="width: 100%">
-                        <span class="progress-title">Present (15)</span>  <div class="progress-bar" style="width:57%">57%</div>
+                        <span class="progress-title">Present (15)</span>  <div class="progress-bar" style="width:57%">57.7%</div>
                       </div>
                       <div class="progress" style="width: 100%">
                         <span class="progress-title">Leave (2)</span><div class="progress-bar bg-success" style="width:7%">7%</div>
                       </div>
                       <div class="progress" style="width: 100%">
-                        <span class="progress-title">Absent (5)</span><div class="progress-bar bg-info" style="width:19%">19%</div>
+                        <span class="progress-title">Absent (5)</span><div class="progress-bar bg-info" style="width:19%">19.2%</div>
                       </div>
                       <div class="progress" style="width: 100%">
-                        <span class="progress-title">Holiday (4)</span> <div class="progress-bar bg-danger" style="width:15%">15%</div>
+                        <span class="progress-title">Holiday (4)</span> <div class="progress-bar bg-danger" style="width:15%">15.4%</div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div>
-                  <div id="chartContainer1" style="height: 275px; width: 100%;"></div>
+                  <div id="donutchart1" style="margin: auto;"></div>
                 </div>
               </div>
 
-              <p class="pt spt">Subject Wise Attendance </p>
+              <p class="pt spt">
+                Subject Wise Attendance
+              </p>
               <div class="chart-container">
-                <div>
-                  <div id="chartContainer2" style="height: 275px; width: 100%;"></div>
-                  <p class="pt spt2" style="background-color: #cde0c3;">English </p>
-                </div>
-                <div>
-                  <div id="chartContainer3" style="height: 275px; width: 100%;"></div>
-                  <p class="pt spt2" style="background-color: #cde0c3;">Math </p>
-                </div>
-                <div>
-                  <div id="chartContainer4" style="height: 275px; width: 100%;"></div>
-                  <p class="pt spt2" style="background-color: #cde0c3;">Physics </p>
-                </div>
-                <div>
-                  <div id="chartContainer5" style="height: 275px; width: 100%;"></div>
-                  <p class="pt spt2" style="background-color: #cde0c3;">Chemistry </p>
+                <div id="donutchart2" style="margin: auto;"></div>
+                <div id="donutchart3" style="margin: auto;"></div>
+              </div>
+
+              <div id="demo1" class="collapse">
+                <div class="chart-container">
+                  <div id="donutchart4" style="margin: auto;"></div>
+                  <div id="donutchart5" style="margin: auto;"></div>
                 </div>
               </div>
+
+              <p class="pt spt" style="padding: 10px;text-align: center; background-color: transparent;margin-top: -25px;">
+                <a href="#demo1" id="a_demo1" class="text-center" data-toggle="collapse" style="color: #007bff;text-transform: uppercase;">
+                  <span> <b id="a_text">click here to see the more subject's details</b>  <br>
+                    <i class="fas fa-angle-double-down" id="up_down_icon"></i>
+                  </span>
+                </a>
+              </p>
 
               <p class="pt spt"> <i class="fas fa-user-graduate"></i> Top Performers </p>
               <div class="tp-user-wrapper">
@@ -152,7 +218,7 @@
                   <div class="tp-user">
                     <div>
                       <div class="tp-imgw">
-                        <img src="./assests/img/user/user_1.jpeg" alt="">
+                        <img src="./assests/img/user/user_4.jpeg" alt="">
                       </div>
                     </div>
                     <div>
@@ -167,33 +233,33 @@
 
               </div>
 
-              <p class="pt spt" style="margin-top: 60px;">  <i class="far fa-calendar-alt"></i> Overall Reports </p>
+              <p class="pt spt" style="margin-top: 60px;">  <i class="far fa-calendar-alt"></i> Monthly Attendance Analysis </p>
               <div class="user-cal-wrapper">
-                <div style="display: flex; align-items: center;">
+                <div style="display: flex; align-items: center;border: 1px dotted #ddd;">
                   <table class="table info-table" style="margin-bottom: 0px;">
                     <tbody style="display: flex;flex-direction: column;align-items: center;">
                       <tr>
                         <td class="b-n" style="border-top: none;">
-                           <span class="spn1 gbg" style="border: 1px solid #0f9949">Present</span>
-                           <span class="spn2" style="border: 1px solid #0f9949">7</span>
+                           <span class="spn1 gbg" style="border: 1px solid #79bcf4">Present</span>
+                           <span class="spn2" style="border: 1px solid #79bcf4">8 (66%)</span>
                         </td>
                       </tr>
                       <tr>
                         <td style="border-top: none;">
-                          <span class="spn1 rbg" style="border: 1px solid #f11d47">Absent</span>
-                          <span class="spn2" style="border: 1px solid #f11d47">1</span>
+                          <span class="spn1 rbg" style="border: 1px solid #f88da2">Absent</span>
+                          <span class="spn2" style="border: 1px solid #f88da2">1 (8%)</span>
                         </td>
                       </tr>
                       <tr>
                         <td style="border-top: none;">
-                          <span class="spn1 lbg" style="border: 1px solid #e7ac44">Leave</span>
-                          <span class="spn2" style="border: 1px solid #e7ac44">1</span>
+                          <span class="spn1 lbg" style="border: 1px solid #efc780">Leave</span>
+                          <span class="spn2" style="border: 1px solid #efc780">1 (8%)</span>
                         </td>
                       </tr>
                         <tr>
                           <td style="border-top: none;">
-                            <span class="spn1 bbg" style="border: 1px solid #0b4e85">Holiday</span>
-                            <span class="spn2" style="border: 1px solid #0b4e85">2</span>
+                            <span class="spn1 bbg" style="border: 1px solid #72f1a7">Holiday</span>
+                            <span class="spn2" style="border: 1px solid #72f1a7">2 (16%)</span>
                           </td>
                         </tr>
                       </tr>
@@ -203,13 +269,11 @@
                 <div class="user-cal">
                   <div class="user-cal-icon">
                     <span>
-                      <i class="fas fa-caret-down" style="color: slategrey; margin-right: 5px;"></i>
-                      <i class="fas fa-chevron-circle-left" style="color: slategrey"></i>
+                      <i class="fas fa-angle-left" style="color:slategrey "></i>
                     </span>
                     <span>March 2019</span>
                     <span>
-                      <i class="fas fa-chevron-circle-right" style="color:slategrey "></i>
-                      <i class="fas fa-sort-up" style="color: slategrey;margin-left: 5px;"></i>
+                      <i class="fas fa-angle-right" style="color:slategrey "></i>
                     </span>
                   </div>
                   <div class="cal">
@@ -226,22 +290,22 @@
                     <span></span>
                     <span></span>
                     <span></span>
-                    <span> <b class="cir rbg"> <span>1</span></b></span>
-                    <span> <b class="cir bbg"> <span>2</span></b> </span>
+                    <span class="rbg"> <b> <span>1</span></b></span>
+                    <span class="bbg"> <b> <span>2</span></b> </span>
                     <!-- ............................. -->
                     <span class="text-danger"> <b>3</b></span>
-                    <span> <b class="cir bbg"> <span>4</span></b></span>
-                    <span> <b class="cir gbg"> <span>5</span></b></span>
-                    <span> <b class="cir gbg"> <span>6</span></b></span>
-                    <span> <b class="cir gbg"> <span>7</span></b></span>
-                    <span> <b class="cir gbg"> <span>8</span></b></span>
-                    <span> <b class="cir gbg"> <span>9</span></b></span>
+                    <span class="bbg"> <b> <span>4</span></b></span>
+                    <span class="gbg"> <b> <span>5</span></b></span>
+                    <span class="gbg"> <b> <span>6</span></b></span>
+                    <span class="gbg"> <b> <span>7</span></b></span>
+                    <span class="gbg"> <b> <span>8</span></b></span>
+                    <span class="gbg"> <b> <span>9</span></b></span>
                     <!-- ............................. -->
                     <span class="text-danger"> <b>10</b></span>
-                    <span> <b class="cir lbg"> <span>11</span></b></span>
-                    <span> <b class="cir gbg"> <span>12</span></b></span>
-                    <span> <b class="cir gbg"> <span>13</span></b></span>
-                    <span> <b>14</b></span>
+                    <span class="lbg"> <b> <span>11</span></b></span>
+                    <span class="gbg"> <b> <span>12</span></b></span>
+                    <span class="gbg"> <b> <span>13</span></b></span>
+                    <span class="gbg"> <b>14</b></span>
                     <span> <b>15</b></span>
                     <span> <b>16</b></span>
                     <!-- ............................. -->
@@ -273,12 +337,20 @@
                 </div>
               </div>
 
+              <!-- <p class="pt spt" style="margin-top: 60px;">
+                <i class="far fa-calendar-alt"></i> Monthly Wise Attendance Analysis </p> -->
+              <div style="margin-top: 30px;">
+                <div id="columnchart_material1" style="width: 100%; height: 400px;"></div>
+              </div>
+
+              <div style="margin-top: 30px;">
+                <div id="columnchart_material2" style="width: 100%; height: 400px;"></div>
+              </div>
             </div>
           </div>
     		</div>
     	</div>
     </div>
-
   </div>
 </body>
   <!-- jQuery, Popper, Bootstrap, library -->
@@ -287,7 +359,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
   <!-- Use this on Development Server
   <script type="text/javascript" src="assests/js/jquery.min.js"></script>
