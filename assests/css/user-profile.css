@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 body {
   overflow-y: auto !important;
   min-height: 600px;
   min-height: 100%;
   height: 100%;
   background: #f2f2f2;
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 14.3px;
   line-height: 1.43 !important;
   padding: 0 !important;
@@ -523,25 +525,37 @@ body {
   content: '';
   position: absolute;
   width: 100%;
-  height: 1px;
-  background-color: #0069d9;
-  bottom: -3px;
+  height: 2px;
+  background-color: #3fa9ea;
+  bottom: -1px;
   left: 0;
+}
+.dark-blue {
+  color: #062946;
+}
+.text-bold {
+  font-weight: 600;
+}
+.bg-table {
+  background-color: #f6fbfe !important;
 }
 .basic-info-ul {
   list-style: none;
   padding: 0px;
 }
 .basic-info-ul > li {
-  margin: 7px;
+  margin: 10px 7px;
+  display: flex;
 }
 .basic-info-ul > li > i {
-  margin-right: 10px;
+  margin-right: 15px;
   color: dimgray;
 }
 .basic-info-ul > li > span {
   font-size: 14px;
   color: gray;
+  margin-top: -5px;
+  font-weight: 600;
 }
 .about-navs {
   margin-top: 35px;
@@ -549,7 +563,7 @@ body {
 .about-navs > ul {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  border-bottom: 1px solid #ddd !important;
+  border-bottom: 1px solid #9ad2f4 !important;
 }
 .about-navs > ul > li {
   margin-bottom: -1px !important;
@@ -568,9 +582,12 @@ body {
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 500;
-  color: darkgray;
+  color: darkslategray;
   transition: background-color 0.4s, color 0.4s, border 0.4s;
-  border-bottom: 2px solid transparent!important;
+  /* border-bottom: 2px solid transparent!important; */
+  border-top: 2px solid transparent!important;
+  border-left: 1px solid transparent!important;
+  border-right: 1px solid transparent!important;
   font-weight: bold;
   text-align: center;
 }
@@ -579,25 +596,37 @@ body {
 }
 .about-navs > ul > li > a.active {
   color: darkslategray !important;
-  background-color: #f5f5f5 !important;
-  border-bottom: 2px solid #0069d9 !important;
+  background-color: #f6fbfe !important;
+  border-top: 2px solid #9ad2f4 !important;
+  border-left: 1px solid #9ad2f4 !important;
+  border-right: 1px solid #9ad2f4 !important;
+  /* border-bottom: 2px solid #0069d9 !important; */
 
 }
 .about-navs > ul > li > a:hover {
-  background-color: #f5f5f5 !important;
+  background-color: #f6fbfe !important;
   color: darkslategray !important;
-  border-bottom: 2px solid #0069d9 !important;
+  border-top: 2px solid #3fa9ea !important;
+  border-top: 2px solid #9ad2f4 !important;
+  border-left: 1px solid #9ad2f4 !important;
+  border-right: 1px solid #9ad2f4 !important;
+  /* border-bottom: 2px solid #0069d9 !important; */
 }
 .about-navs .tab-content {
-  margin-top: 40px;
+  /* margin-top: 40px; */
 }
 .about-navs .tab-content > .tab-pane {
-  /* padding: 0px; */
+  background-color: #f6fbfe !important;
+  padding-top: 45px;
+  padding-bottom: 10px;
+  border: 1px solid #9ad2f4;
+  border-top: none;
 }
 .dim-p {
-  margin-top: 35px;
+  margin-top: 45px;
   color: darkslategray;
   font-size: 16px;
+  padding-left: 5px;
   font-weight: 600;
 }
 .about-table > tbody > tr {
@@ -606,8 +635,9 @@ body {
 }
 .about-table > tbody > tr > th {
   font-size: 13px;
-  padding: 9px 12px;
-  color: dimgrey;
+  padding: 10px 15px;
+  color: #5e5e5e;
+  line-height: 18px;;
 }
 .about-table > tbody > tr > td {
   font-size: 13px;
