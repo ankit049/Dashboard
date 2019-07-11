@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Dashboard</title>
+
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified CSS -->
+    <!-- Use this on Producetion Server -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+    <!-- Custom Style CSS File-->
+    <link href="assests/css/user-profile.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="user-profile-wrapper">
+        <div class="container no-padding-xs">
+            <div class="profile_banner_wrapper">
+                <header class="profile_banner  position-relative"
+                    style="background-image:url('./assests/img/student_cover_pic.jpeg')">
+                    <div class="clearfix">
+                        <div class="banner_wrapper clearfix profile_username">
+                            <div class="position-relative">
+                                <div class="user_profile_pic_wrapper">
+                                    <div class="position-relative">
+                                        <img class="user_profile_pic" src="./assests/img/user/new_user_1.png"
+                                            style="width: 100%;max-width: 100%">
+                                    </div>
+                                </div>
+
+                                <div class="banner_text">
+                                    <h2> Vimal Kumar </h2>
+                                    <span class="profile_follow_btns">
+                                        <button class="btn btn-sm margin-5 btn-primary text-bold">
+                                            <i class="fas fa-pen"></i> Edit Personal Info
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coloroverlayblack"></div>
+                </header>
+
+                <div class="profile_menu">
+                    <div class="col-sm-12 pad-left">
+                        <ul class="profile_menu_ul col-sm-12">
+                            <li><a href="./user-profile-new.html" class="active">About </a></li>
+                            <li><a href="./user-attandence-new.html">Attendance</a></li>
+                            <li><a href="./academic-performance-new.html">Academic Performance</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row margin-top-20">
+                <div class="col-md-12 user-profile-main-sec">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="about-heading">
+                                        <span> Basic Info </span>
+                                    </p>
+                                </div>
+                                <div class="col-md-7">
+                                    <ul class="basic-info-ul">
+                                        <li>
+                                            <i class="fas fa-user"></i>
+                                            <span style="font-weight: 600">Vimal Kumar</span>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-envelope"></i>
+                                            <span> <i class="dark-blue text-bold"> vimal123@gmail.com</i></span>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-phone"></i>
+                                            <span class="br-c" style="font-weight: 600">+91-8907654323</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-5">
+                                    <ul class="basic-info-ul">
+                                        <li>
+                                            <i class="fas fa-home"></i>
+                                            <span>
+                                                A-272, Block M Market,<br>
+                                                Near Moti Mahal Greater Kailash Part 1,<br>
+                                                <span style=""> Delhi, 110048</span>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="about-navs">
+                                        <ul class="nav nav-tabs">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href="#s_d" data-toggle="tab">
+                                                    <i class="fas fa-user"></i>
+                                                    Student's Details
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#c_d" data-toggle="tab">
+                                                    <i class="fas fa-clipboard-list"></i>
+                                                    Class Details</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#p_d" data-toggle="tab">
+                                                    <i class="fas fa-money-check-alt"></i>
+                                                    Payment Details
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#h_d" data-toggle="tab">
+                                                    <i class="fas fa-building"></i>
+                                                    Hostel
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                        <!-- Tab panes -->
+                                        <div class="tab-content">
+                                            <div class="tab-pane container active" id="s_d">
+                                                <p class="dim-p" style="margin-top: 0px">
+                                                    <i class="fas fa-user-edit"></i>
+                                                    Basic Information
+                                                </p>
+                                                <table class="table about-table table-borderless bg-table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th class="">Name</th>
+                                                            <td class="">Vimal Kumar</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="">Gender</th>
+                                                            <td class="">Male</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="">Date of Birth</th>
+                                                            <td class="">15/03/2008</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="">Blood Group</th>
+                                                            <td class=""> <b class="text-danger">B+</b> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Father's Name / Occupation</th>
+                                                            <td>Mr. Pratap Kumar / <b>Business</b> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Mother's Name/ Occupation</th>
+                                                            <td>Mrs. Suneeta / <b>Home Maker</b></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Siblings</th>
+                                                            <td class="">Amit, Preeti</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="">Guardian's Name </th>
+                                                            <td class="">Mr. Anuj Kumar</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="">Guardian's Relationship </th>
+                                                            <td class="">Uncle</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="">Hobbies</th>
+                                                            <td class="">Reading Books, Playing Cricket, Singing</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+
+                                                <p class="dim-p">
+                                                    <i class="fas fa-phone"></i>
+                                                    Contact Information
+                                                </p>
+                                                <table class="table about-table table-borderless bg-table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>Mobile</th>
+                                                            <td>+91-8907654323</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Father's Mobile</th>
+                                                            <td>+91-8947654723</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Mother's Mobile</th>
+                                                            <td>+91-8907454320</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="">Guardian's Mobile </th>
+                                                            <td class="">+91-9860543726</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Emergency Contact</th>
+                                                            <td class="br-c">+91-8900654021</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Email ID</th>
+                                                            <td> <i class="dark-blue">vimal123@gmail.com</i> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Father's Email ID</th>
+                                                            <td> <i class="dark-blue">pratap255@gmail.com</i> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Mother's Email ID</th>
+                                                            <td> <i class="dark-blue">suneeta123@gmail.com</i> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="">Address</th>
+                                                            <td class="" style="display: flex">
+                                                                <!-- <i class="fas fa-map-marker-alt" style="margin-right: 10px"></i> -->
+                                                                <span style="margin-top: -5px;">
+                                                                    A-272, Block M Market,<br>
+                                                                    Near Moti Mahal Greater Kailash Part 1,<br>
+                                                                    <span> Delhi, 110048</span>
+                                                                </span>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="tab-pane container fade" id="c_d">
+                                                <table class="table about-table table-borderless bg-table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>Class</th>
+                                                            <td>X1</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Session</th>
+                                                            <td>2019-20</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Course</th>
+                                                            <td><b>NEET Crash Course 2019-20</b></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Batch</th>
+                                                            <td>B1/2019/NE</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Centre</th>
+                                                            <td>Agara/NA</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Registration No</th>
+                                                            <td>PR07B234</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Admission No</th>
+                                                            <td> <b>PR7Q83251</b> </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Exams</th>
+                                                            <td > <b> NEET, AIIMS</b></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Subjects</th>
+                                                            <td> Physic, Chemistry, Biology</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Fee Status</th>
+                                                            <td class="text-success"> <b> DONE</b></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="tab-pane container fade" id="p_d">
+                                                <p style="font-size: 15px;color: dimgrey">
+                                                    <i class="far fa-check-circle"></i>
+                                                    Pending Fee
+                                                    <b class="text-danger" style="margin-left: 10px;">₹​0</b>
+                                                </p>
+                                                <p class="dim-p" style="margin-top: 15px">
+                                                    <i class="far fa-credit-card"></i>
+                                                    Previous Transactions
+                                                </p>
+                                                <table class="table tran-table">
+                                                    <thead class="thead-dark">
+                                                        <tr>
+                                                            <th>Receipt No</th>
+                                                            <th>Date</th>
+                                                            <th>Fee Name</th>
+                                                            <th>Fee Head</th>
+                                                            <th>Amount</th>
+                                                            <th>Amount Paid</th>
+                                                            <th>Balance</th>
+                                                            <th>Mode</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="table-success">
+                                                            <td>237184</td>
+                                                            <td>03-11-2018</td>
+                                                            <td>Installment-3</td>
+                                                            <td>Course Fee</td>
+                                                            <td class="dark-blue text-bold">₹27,000</td>
+                                                            <td class="text-success text-bold">₹27,000</td>
+                                                            <td class="text-danger text-bold">₹0.0</td>
+                                                            <td>Cash</td>
+                                                        </tr>
+                                                        <tr class="table-primary">
+                                                            <td>212522</td>
+                                                            <td>02-12-2018</td>
+                                                            <td>Installment-2</td>
+                                                            <td>Course Fee</td>
+                                                            <td class="dark-blue text-bold">₹25,000</td>
+                                                            <td class="text-success text-bold">₹25,000</td>
+                                                            <td class="text-danger text-bold">₹0.0</td>
+                                                            <td>DD</td>
+                                                        </tr>
+                                                        <tr class="table-success">
+                                                            <td>213321</td>
+                                                            <td>03-01-2019</td>
+                                                            <td>Installment-1</td>
+                                                            <td>Course Fee</td>
+                                                            <td class="dark-blue text-bold">₹30,000</td>
+                                                            <td class="text-success text-bold">₹30,000</td>
+                                                            <td class="text-danger text-bold">₹0.0</td>
+                                                            <td>Cash</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="tab-pane container fade" id="t_d">
+                                                <table class="table about-table table-borderless bg-table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>Transport Mode</th>
+                                                            <td> <b> Bus</b></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Bus No</th>
+                                                            <td>UP-45-A-3401</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Driver's Name</th>
+                                                            <td>Mr. Hemant Singh </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="">Driver's No </th>
+                                                            <td class="">+919869943726</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Route</th>
+                                                            <td> via Kalyanpur</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Pickup Time</th>
+                                                            <td> <i class="dark-blue text-bold"> <b> 9:30 AM</b> </i>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Pickup Address</th>
+                                                            <td>
+                                                                <span>
+                                                                    A-272, Block M Market,<br>
+                                                                    Near Moti Mahal Greater Kailash Part 1,<br>
+                                                                    <span
+                                                                        style="margin-top: 7px;display: inline-block;color: dimgray;">
+                                                                        Delhi, 110048</span>
+                                                                </span>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="tab-pane container fade" id="h_d">
+                                                <table class="table about-table table-borderless bg-table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>Hostel Name</th>
+                                                            <td>Tulip Student Hostel</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Room No</th>
+                                                            <td>AK-208</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Hostel Timing</th>
+                                                            <td>
+                                                                <i class="dark-blue text-bold"> <b> 5:00 AM</b> - <b>
+                                                                        10:30 PM</b> </i>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- jQuery, Popper, Bootstrap, library -->
+
+<!-- Use this on Producetion Server -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+<!-- Use this on Development Server
+  <script type="text/javascript" src="assests/js/jquery.min.js"></script>
+  <script type="text/javascript" src="assests/main/js/popper.min.js"></script>
+  <script type="text/javascript" src="assests/main/js/bootstrap.min.js"></script> -->
+
+<!-- Custom Java Script -->
+
+</html>
